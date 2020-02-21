@@ -44,3 +44,9 @@ h5 {
     font-size: 1rem;
   }
 }
+
+@media all and (max-width: 400px) {
+  .list-group-item {
+    font-size: 1rem;
+  }
+}
