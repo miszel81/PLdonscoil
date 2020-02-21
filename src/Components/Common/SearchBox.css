@@ -1,0 +1,10 @@
+.mainsearch {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+.mainsearch.form-control {
+  /* font-family: "Amatic SC", cursive !important; */
+  font-family: 'Open Sans Condensed', sans-serif !important;
+  font-size: 1.5rem !important;
+}

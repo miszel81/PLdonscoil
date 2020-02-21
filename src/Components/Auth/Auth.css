@@ -1,0 +1,21 @@
+.not-registered p {
+  font-size: 1rem;
+  padding: 0px 0px;
+}
+
+.not-registered a {
+  text-decoration: none;
+}
+
+.cant-remember p {
+  padding: 15px 0px 0px;
+  font-size: 1rem;
+}
+
+.cant-remember a {
+  text-decoration: none;
+}
+
+.jumbotron {
+  opacity: 0.9;
+}

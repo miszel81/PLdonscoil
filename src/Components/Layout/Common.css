@@ -1,0 +1,674 @@
+/* Backgrounds */
+
+input {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1 rem;
+}
+
+.Toastify__toast--default {
+  background: #fff !important;
+  color: #000 !important;
+  border: solid 1px #000;
+}
+
+.school-description {
+  padding: 55px;
+}
+
+.forschools-background {
+  background-image: linear-gradient(#333, #fff);
+}
+
+.login-background {
+  background-image: linear-gradient(#333, #fff);
+}
+
+.results-background {
+  background-image: linear-gradient(#333, #fff);
+}
+
+/* .home-trending-project {
+  background-image: linear-gradient(lightgrey, #fff);
+} */
+
+.about-background {
+  background-image: linear-gradient(#333, #fff);
+}
+
+.schoolprofile-background {
+  background-image: linear-gradient(#333, #fff);
+}
+
+.dashboard-background {
+  background-image: linear-gradient(#333, #fff);
+  /* background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1),
+      rgb(255, 255, 255)
+    ),
+    url("../Layout/img/eryk_tree.jpeg"); */
+}
+
+.CountyProjectsTable-background {
+  background-image: linear-gradient(#333, #fff);
+}
+
+.register-background {
+  background-image: linear-gradient(#333, #fff);
+}
+.create-project-background {
+  background-image: linear-gradient(#333, #fff);
+  /* background-image: url("../Layout/img/eryk_boy.jpeg");
+  background-repeat: no-repeat; */
+  /* background-size: cover;
+  background-position: center; */
+}
+.homepage-background {
+  position: relative;
+  /* background-image: url("../Layout/img/girl.jpg"); */
+  background-image: url("../Layout/img/school_search_box1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+}
+
+.loginPicture {
+  background-image: url("../Layout/img/creative.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  background-position: left;
+}
+
+.schools-background {
+  /* position: relative; */
+  /* background-image: linear-gradient(#333, #fff); */
+  background-image: url("../Layout/img/sch.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 65vh;
+  background-position: center;
+}
+
+.contact-background {
+  background-image: url("../Layout/img/office.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 65vh;
+  background-position: center;
+}
+
+.supporters-background {
+  /* position: relative; */
+  /* background-image: linear-gradient(#333, #fff); */
+  background-image: url("../Layout/img/library.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 65vh;
+  background-position: top;
+}
+.support-background {
+  /* position: relative; */
+  /* background-image: linear-gradient(#333, #fff); */
+  background-image: url("../Layout/img/support_background1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 55vh;
+  background-position: top;
+}
+.about2-background {
+  position: relative;
+  /* background-image: linear-gradient(#333, #fff); */
+  background-image: url("../Layout/img/fractal.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 65vh;
+  background-position: bottom;
+  margin-bottom: 60px;
+}
+
+.table-background {
+  background-image: linear-gradient(#333, #fff);
+}
+
+.eryk-background-tree {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1),
+      rgb(255, 255, 255)
+    ),
+    url("../Layout/img/eryk_tree.jpeg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+}
+
+/* for paragraphs with much text */
+.reading {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+  padding: 2rem;
+}
+
+/* fontsize for datepicker */
+.data-input input {
+  font-size: 1.5rem;
+}
+
+.data-select select {
+  font-size: 1.5rem;
+  background-color: lightgray;
+  margin-bottom: 10px;
+}
+
+.donate-radio {
+  padding: 5px;
+}
+
+.finance {
+  background-color: lightgrey;
+  padding: 15px;
+  border-radius: 1%;
+}
+
+.finance input {
+  font-size: 1.5rem;
+}
+
+.account-image {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 1%;
+}
+.account-image-edit {
+  background-color: lightgrey;
+  padding: 15px;
+  border-radius: 1%;
+  margin: auto;
+  width: 50%;
+  align-items: center;
+}
+
+.account-image input {
+  font-size: 1.5rem;
+}
+
+.form-check {
+  display: flex;
+  align-items: center;
+}
+
+.form-check input {
+  cursor: pointer;
+}
+
+.finlabel {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.selectedCounties {
+  font-size: 1rem;
+  margin: 0px;
+  display: inline-block;
+  padding-right: 5px;
+  cursor: pointer;
+}
+
+.form-control option {
+  cursor: pointer;
+}
+
+.form-control {
+  font-family: "Open Sans Condensed", sans-serif !important;
+  font-size: 1.2rem !important;
+}
+
+.form-control {
+  color: #000 !important;
+}
+
+/* .edit-form label {
+  color: #fff;
+} */
+
+.green {
+  color: #169b62;
+}
+
+.jumbotronWhite {
+  background-color: #fff;
+}
+
+.img-display {
+  margin-top: 0;
+  text-align: center;
+  /* background-image: url("../Layout/img/bcg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; */
+}
+
+.img-display img {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 60%;
+  height: auto;
+  object-fit: contain;
+  /* width: 50%; */
+
+  /* display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  object-fit: contain; */
+  border-radius: 2%;
+}
+
+.img-display-sponsor img {
+  height: auto;
+  width: 150px;
+  padding-left: 0;
+
+  /* display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  object-fit: contain; */
+  border-radius: 2%;
+}
+
+.card-image img {
+  padding: 15px;
+  object-fit: contain;
+  font-family: "object-fit: contain;";
+  /* width: 100%;
+  max-width: 300px;
+  height: auto; */
+  border-radius: 2%;
+}
+
+.card-body a {
+  text-decoration: none;
+  color: #333;
+}
+
+.school-app-title {
+  color: #169b62;
+}
+
+.application {
+  background-color: #edf1f1f1;
+  line-height: 1.5rem;
+}
+
+.application p {
+  font-size: 1.7rem;
+}
+
+.application-container h1 {
+  color: #fff;
+}
+
+.addInfo textarea {
+  background-color: #333;
+}
+
+.table a {
+  text-decoration: none;
+  color: #000;
+}
+
+.table th {
+  font-size: 1rem;
+}
+.project-details.jumbotron {
+  /* background-color: #fff !important; */
+  min-height: 300px;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem !important;
+}
+
+.project-details.jumbotron p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem !important;
+}
+
+.project-details.jumbotron button {
+  font-family: "Amatic SC", cursive;
+  font-size: 1.5rem !important;
+}
+.project-details.jumbotron a {
+  text-decoration: none;
+  color: #000;
+}
+
+.project-title {
+  font-size: 3rem !important;
+}
+
+.account-profile-title {
+  font-size: 3rem !important;
+}
+
+.project-detailed-info {
+  font-size: 1.5rem !important;
+  line-height: 1rem;
+}
+
+.project-detailed-info a {
+  text-decoration: none;
+  color: #169b62;
+}
+
+.project-detailed-deadline {
+  font-size: 1rem !important;
+  color: red;
+}
+
+.project-details-header {
+  font-family: "Open Sans Condensed", sans-serif !important;
+  background-color: #fff;
+  line-height: 1.5rem;
+}
+
+.project-details-header a {
+  text-decoration: none;
+  color: #333;
+}
+
+.project-details-share {
+  text-align: center;
+}
+
+.project-details-share a {
+  text-align: center;
+  color: #333;
+}
+
+.description {
+  line-height: 2rem;
+}
+
+.modify-project label {
+  color: #333;
+}
+
+textarea {
+  background-color: transparent;
+}
+
+.modify-project-img {
+  background-color: transparent;
+  padding: 15px;
+  border-radius: 1%;
+}
+
+.ddd textarea {
+  background-color: white !important;
+  opacity: 0.7 !important;
+}
+
+.data-select select {
+  background-color: #fff;
+  opacity: 0.7 !important;
+}
+
+.project-details-share {
+  display: flex;
+  justify-content: center;
+}
+
+.not-found {
+  min-height: 75vh;
+}
+
+.full-page {
+  min-height: 75vh;
+}
+
+.full-page-resetpass {
+  min-height: 65vh;
+}
+
+.account-profile p {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1rem !important;
+  text-align: justify;
+}
+
+.account-profile h1 {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 3rem !important;
+  text-align: center;
+}
+
+.account-profile-description {
+  padding: 25px;
+}
+
+.jumbotron.project-details-header p {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1.5rem !important;
+}
+
+.trending-header {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 2rem !important;
+  margin-bottom: 15px;
+}
+
+/* .trendingBackground {
+  background-color:black ;
+} */
+
+.for-school-search-text p {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1.5rem !important;
+}
+
+.jumbotron-trending {
+  padding: 15px !important;
+  background-color: #fff;
+}
+
+.scrollImage img {
+  position: absolute;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 5rem;
+}
+
+.btn {
+  font-family: "Open Sans Condensed", sans-serif !important;
+}
+
+.section-header {
+  font-size: 3rem;
+}
+
+.mobileAccountNumber {
+  font-size: 3rem !important;
+}
+
+.standard-user-profile {
+  font-size: 1.5rem !important;
+  padding: 5px;
+}
+
+.image-edit-top img {
+  height: 300px;
+}
+
+@media only screen and (max-width: 400px) {
+  .Mobile-item {
+    font-size: 1.3rem !important;
+  }
+
+  .slogan h4 {
+    font-size: 2rem;
+  }
+  .slogan h5 {
+    font-size: 1rem;
+  }
+
+  .DonscoilPartners img {
+    padding: 40px;
+  }
+  .h-text-fontMainTitle {
+    font-size: 2rem !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .school-app-title {
+    color: #169b62;
+    font-size: 1.3rem;
+  }
+  .container-hand {
+    padding: 5px !important;
+  }
+  .cant-remember {
+    text-align: center;
+  }
+  .not-registered {
+    padding-left: 10px;
+  }
+  /* .jumbotron-login {
+    margin: 5px;
+  } */
+  .project-detailed-info {
+    font-size: 1rem !important;
+  }
+  .supporters-background {
+    height: 50vh;
+  }
+  .schools-background {
+    height: 50vh;
+  }
+  .contact-background {
+    height: 35vh;
+  }
+  .about2-background {
+    height: 35vh;
+  }
+  .finance input {
+    font-size: 1rem;
+  }
+  .container {
+    padding: 0 !important;
+  }
+  .ownerView {
+    padding: 0;
+  }
+  .jumbotron.project-details-header p {
+    font-size: 1.2rem !important;
+  }
+  .img-display img {
+    width: 100%;
+    height: auto;
+    border-radius: 2%;
+  }
+  .loginPicture {
+    display: none;
+  }
+
+  .image-edit-top img {
+    height: 80px;
+  }
+
+  .scrollImage {
+    display: none;
+  }
+
+  .available-in-counties {
+    font-size: 1rem;
+  }
+
+  .mobilePrjectDescription {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    font-size: 1 rem;
+  }
+
+  .mobile-reference {
+    font-size: 1rem;
+  }
+
+  .project-details.jumbotron button {
+    font-size: 1rem !important;
+  }
+
+  .text-left {
+    /* mobile */
+    text-align: center !important;
+  }
+
+  .section-header {
+    text-align: center !important;
+  }
+
+  .recently-registered-logos {
+    display: flex;
+    flex-direction: column;
+    text-align: center !important;
+  }
+
+  .mobileAccountNumber {
+    font-size: 2rem !important;
+  }
+
+  .trendingHeaderMobile {
+    text-align: center;
+  }
+  .account-image-edit {
+    background-color: lightgrey;
+    /* padding: 15px; */
+    border-radius: 1%;
+    margin: auto;
+    width: 100%;
+    align-items: center;
+  }
+  .badge {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .selectedCounties {
+    font-size: 1rem;
+    padding-left: 0 !important;
+  }
+}
+.h-text-fontMainText {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 2rem !important;
+}
+.h-text-fontMainSubTitle {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 3rem !important;
+}
+
+@media only screen and (min-width: 1800px) {
+  .loginPicture {
+    background-image: url("../Layout/img/creative.jpg");
+    background-repeat: no-repeat;
+    background-size: initial;
+    /* background-attachment: fixed; */
+    background-position: top;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .loginPicture {
+    background-image: url("../Layout/img/creative.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-position: center;
+  }
+}

@@ -1,0 +1,36 @@
+body {
+  /* font-family: "Amatic SC", cursive; */
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  
+
+  /* background-attachment: fixed; */
+}
+
+/* html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0px; 
+  background: transparent;
+} */
+
+.dev {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2rem;
+  justify-content: space-between;
+  margin-left: 25px;
+  color: lightgrey;
+}
+
+/* .layout {
+  background-image: url("../Layout/img/school_search_box.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  background-attachment: fixed;
+} */

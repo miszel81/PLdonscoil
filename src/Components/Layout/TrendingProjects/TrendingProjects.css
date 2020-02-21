@@ -1,0 +1,31 @@
+.SchoolFeaturedProjects {
+  /* background-image: url("../img/art.png"); */
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+.card {
+  border: 0;
+  margin: 0;
+  align-items: center;
+}
+
+.card-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.card-text {
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.card-img-top {
+  height: 400px;
+}

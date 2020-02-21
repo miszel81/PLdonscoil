@@ -1,0 +1,15 @@
+.btn {
+  font-size: 1.5rem;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+.after-registration {
+  min-height: 75vh;
+}
+
+@media only screen and (max-width: 600px) {
+  .btn {
+    font-size: 1rem;
+    font-family: "Open Sans Condensed", sans-serif;
+  }
+}

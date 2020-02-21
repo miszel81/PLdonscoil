@@ -1,0 +1,461 @@
+.jumbotron h1 {
+  font-size: 2rem;
+}
+
+.heading-text {
+  font-size: 3rem;
+  padding: 30px;
+}
+
+.awesome {
+  color: #169b62;
+}
+
+.btn-position {
+  margin: 30px;
+}
+
+.btn-space {
+  margin-right: 20px;
+}
+
+.u-backgroundCover {
+  background-position: center !important;
+  background-origin: border-box !important;
+  background-size: cover !important;
+}
+.u-width50pct {
+  width: 50% !important;
+}
+.u-width44pct {
+  width: 44% !important;
+}
+.u-height600 {
+  height: 600px !important;
+}
+.u-height450 {
+  height: 450px !important;
+}
+.u-height400 {
+  height: 400px !important;
+}
+.u-height350 {
+  height: 350px !important;
+}
+.u-height165 {
+  height: 165px !important;
+}
+.u-right0 {
+  right: 0% !important;
+}
+.u-rightn40 {
+  right: -40% !important;
+}
+.u-left0 {
+  left: 0% !important;
+}
+.u-absolute {
+  position: absolute !important;
+}
+.u-background {
+  z-index: 70 !important;
+}
+.u-relative {
+  position: relative !important;
+}
+.u-maxWidth1000 {
+  max-width: 1000px !important;
+}
+.u-paddingBottom60 {
+  padding-bottom: 60px !important;
+}
+.u-paddingTop60 {
+  padding-top: 60px !important;
+}
+.u-marginAuto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.u-width60pct {
+  width: 60% !important;
+  border-radius: 5px;
+}
+.u-paddingBottom100 {
+  padding-bottom: 100px !important;
+}
+.u-padding60 {
+  padding: 60px !important;
+}
+.u-marginTop8 {
+  margin-top: 8px !important;
+}
+.u-borderBox {
+  -webkit-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+}
+.u-foreground {
+  position: relative !important;
+  /* z-index: 100 !important; */
+}
+.u-paddingRight15 {
+  padding-right: 15px !important;
+}
+.u-paddingLeft15 {
+  padding-left: 15px !important;
+}
+.u-flexWrap {
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.u-flex {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.u-marginBottom15 {
+  margin-bottom: 15px !important;
+}
+.u-flexEnd {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: end !important;
+  -webkit-align-items: flex-end !important;
+  -ms-flex-align: end !important;
+  align-items: flex-end !important;
+}
+.u-flexTop {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: start !important;
+  -webkit-align-items: flex-start !important;
+  -ms-flex-align: start !important;
+  align-items: flex-start !important;
+}
+.u-textAlignCenter {
+  text-align: center !important;
+}
+.u-paddingTop100 {
+  padding-top: 100px !important;
+}
+
+.u-paddingTop60 {
+  padding-top: 60px !important;
+}
+.u-width260 {
+  width: 260px !important;
+}
+.u-marginRight15 {
+  margin-right: 15px !important;
+}
+
+.u-marginTop5 {
+  margin-top: 5px !important;
+}
+.u-flex0 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+.brand-headerMain {
+  font-family: medium-marketing-display-font, Georgia, Cambria,
+    "Times New Roman", Times, serif !important;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 52px;
+  line-height: 1.2em;
+  margin-bottom: 20px;
+}
+
+.h-text-backround {
+  background: #edf1f1f1;
+}
+.h-text-backround_benefit {
+  background: #cacecef1;
+}
+.h-text-font {
+  font-family: "Open Sans Condensed", sans-serif !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.88);
+}
+.h-text-fontMain {
+  /* font-family: "Open Sans", sans-serif !important; */
+  font-family: "Open Sans Condensed", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 1.2em;
+  margin-bottom: 20px;
+}
+
+.h-text-fontMainTitle {
+  font-family: "Open Sans Condensed", sans-serif;
+
+  font-size: 4rem !important;
+}
+
+.h-text-fontMainTrending {
+  font-family: "Open Sans Condensed", sans-serif;
+
+  font-size: 3rem !important;
+}
+.h-text-fontMainWhite {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Arial,
+    sans-serif !important;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 1.2em;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.h-text-fontTitle {
+  font-family: "Open Sans", sans-serif !important;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.about-background-image {
+  background: linear-gradient(#333, #fff);
+  background-image: url("./img/about.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.forschools-background-image {
+  background-size: contain;
+  background-image: url("./img/coding.jpg");
+  background-repeat: no-repeat;
+}
+.forschools-background-image-register {
+  background-size: contain;
+  background-image: url("./img/geometry.jpg");
+  background-repeat: no-repeat;
+}
+.forsupporters-background-image {
+  background-size: contain;
+  background-image: url("./img/clean.jpg");
+  background-repeat: no-repeat;
+}
+.forsupporters-background-image-register {
+  background-size: contain;
+  background-image: url("./img/promote.jpg");
+  background-repeat: no-repeat;
+}
+.about-background-image-schools {
+  background: linear-gradient(#333, #fff);
+  background-image: url("./img/about-schools.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about-background-image-profit {
+  background: linear-gradient(#333, #fff);
+  background-image: url("./img/profit.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.about-background-image-csr {
+  background: linear-gradient(#333, #fff);
+  background-image: url("./img/csr4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.brand--accentSand {
+  background: #edf1f1f1;
+}
+
+.brand-numberedPill {
+  background: #5e5038;
+  color: #f6f1e4;
+}
+.brand-numberedPill {
+  font-family: "Open Sans", sans-serif !important;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.05rem;
+  -webkit-border-radius: 99em;
+  border-radius: 99em;
+  background: rgba(0, 0, 0, 0.88);
+  color: #fff;
+  height: 26px;
+  width: 26px;
+  /* line-height: 30px; */
+  text-align: center;
+}
+
+.about-video {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.border-style {
+  border: white;
+  border-style: solid;
+}
+
+.for-schools-explain {
+  font-size: 1.5rem !important;
+}
+
+.about-background-mainpage {
+  /* background: rgba(39, 39, 39, 0.904); */
+  /* background: rgba(154, 227, 240, 0.418); */
+  /* background: #98a6d4; */
+  background: #84dccf;
+  padding: 60px;
+}
+.about-background-mainpage2 {
+  /* background: rgba(39, 39, 39, 0.904); */
+  /* background: rgba(176, 220, 228, 0.418); */
+  /* background: #a6d9f7; */
+  background: #d3d3d3;
+  padding: 60px;
+}
+
+.about-call-to-action {
+  display: flex;
+  justify-content: center;
+}
+
+.join-item {
+  padding: 20px;
+}
+
+.jumbotron-about {
+  background-color: #fff;
+}
+.mobile-pic {
+  display: none;
+}
+
+.mobile-pic2 {
+  display: none;
+}
+
+@media only screen and (max-width: 400px) {
+  .h-text-fontMainTitle {
+    font-size: 2rem !important;
+  }
+  .u-padding60 {
+    padding: 30px !important;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .forschools-background-image {
+    display: none;
+  }
+
+  .forschools-background-image-register {
+    display: none;
+  }
+
+  .about-background-image {
+    display: none;
+  }
+
+  .about-background-image-profit {
+    display: none;
+  }
+
+  .about-background-image-schools {
+    display: none;
+  }
+
+  .h-text-fontMain {
+    font-size: 2rem;
+  }
+  /* .u-padding60 {
+    padding: 15px !important;
+  } */
+
+  .u-width60pct {
+    width: 100% !important;
+    text-align: center;
+    margin: auto;
+  }
+
+  .u-rightn40 {
+    right: 0 !important;
+  }
+
+  .All-campaigns a {
+    font-size: 0.8rem;
+  }
+
+  .h-text-fontMainTitle {
+    font-size: 2.4rem !important;
+  }
+
+  .fontMainTitleSupport {
+    font-size: 2rem !important;
+    padding: 0 !important;
+  }
+
+  .for-schools-explain {
+    margin-top: 15px;
+    font-size: 1rem !important;
+  }
+
+  .u-paddingBottom60 {
+    padding-bottom: 15px !important;
+  }
+
+  .u-paddingTop60 {
+    padding-top: 5px !important;
+  }
+
+  /* .jumbotron {
+    /* margin: 1rem; */
+  /* padding: 10px; */
+  /* } */
+  .about-call-to-action {
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
+  .cta-item {
+    align-content: center;
+  }
+  .about-background-image-csr {
+    display: none;
+  }
+
+  .about-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-images {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-pic {
+    display: flex;
+    height: 260px;
+  }
+
+  .mobile-pic2 {
+    display: flex;
+    height: 260px;
+  }
+  .mobile-pic3 {
+    display: flex;
+    height: 260px;
+  }
+}

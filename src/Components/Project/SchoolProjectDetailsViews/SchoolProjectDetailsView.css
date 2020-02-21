@@ -1,0 +1,8 @@
+.project-details-share {
+  display: flex;
+}
+
+.fab {
+  cursor: pointer;
+  padding: 5px;
+}

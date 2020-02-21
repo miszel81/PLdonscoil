@@ -1,0 +1,105 @@
+.cardBox {
+  width: 300px;
+  height: 450px;
+  background-color: #fff;
+  /* border-top-left-radius: 15px;
+  border-top-right-radius: 15px; */
+  border-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 15px;
+  transition: all 0.2s ease-in-out;
+}
+
+.cardBox:hover {
+  transform: scale(1.1);
+}
+
+.cardBody {
+  min-height: 170px;
+}
+
+.cardImage {
+  background-color: gainsboro;
+  width: 300px;
+  height: auto;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.cardImage img {
+  object-fit: cover;
+  width: 100%;
+  /* transform: scale(1);
+  transition: all 0.3s;
+  display: block; */
+  max-width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+/* .cardImage:hover img {
+  width: 300px;
+  transform: scale(1.1);
+} */
+
+.cardContent {
+  height: 200px;
+  background-color: #fff;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 10px;
+}
+
+.cardContent a {
+  text-decoration: none;
+  color: #333;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 2rem;
+  padding: 15px;
+}
+
+.cardContentTitle {
+  /* padding-left: 15px; */
+  padding-top: 15px;
+  font-weight: 700;
+  line-height: 2rem;
+}
+.cardContentTeaser {
+  padding-left: 15px;
+  padding-right: 15px;
+  /* height: 150px; */
+}
+
+.cardContentTeaser p {
+  font-size: 1.2rem;
+  min-height: 40px;
+}
+.cardContentButton {
+  padding: 5px;
+  background-color: #fff;
+  padding-left: 15px;
+  display: flex;
+  border-radius: 15px;
+}
+
+.cardContentButton p {
+  font-size: 1.2rem;
+  padding: 10px;
+}
+
+.social-item {
+  padding-left: 5px;
+  cursor: pointer;
+}
+
+.fas {
+  padding-right: 3px;
+}
+
+.school-owner {
+  font-size: 0.7rem !important;
+  margin: 0;
+}

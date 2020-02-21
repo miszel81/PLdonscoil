@@ -1,0 +1,28 @@
+.form-group {
+  font-size: 1.5rem;
+}
+
+.header {
+  margin-top: 15px;
+  color: #fff;
+}
+
+label {
+  color: black;
+  margin-bottom: 0px;
+  font-size: 1rem;
+}
+
+input {
+  opacity: 0.6;
+}
+
+.alert {
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .account-image input {
+    font-size: 1rem;
+  }
+}

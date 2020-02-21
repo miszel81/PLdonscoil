@@ -1,0 +1,9 @@
+props {user}
+
+getMyProjects
+projekty w ktorych uczestniczy
+projekty ktore obserwuje
+alerty - wyswietlanie po lokalizacji
+
+
+Logika czy Admin czy User. Render dodatkowuch pol dla Admin

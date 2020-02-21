@@ -1,0 +1,46 @@
+.billboard {
+  /* background-image: url("../Layout/img/school_search_box.jpg"); */
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.list-group-item {
+  font-size: 1.4rem;
+}
+
+.list-group {
+  max-height: 36vh;
+  margin-bottom: 10px;
+  opacity: 0.9;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.slogan {
+  padding-top: 3rem;
+}
+
+h4 {
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+}
+
+h5 {
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+}
+
+.foundNoSchool {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+@media all and (max-width: 600px) {
+  .foundNoSchool {
+    font-size: 1rem;
+  }
+}

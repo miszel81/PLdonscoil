@@ -1,0 +1,29 @@
+.SchoolDetails-photo {
+  background-image: url("../Layout/img/etns.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 40vh;
+}
+
+.school-profile {
+  background-color: #fff;
+}
+
+.schoolName {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.card {
+  border: 1px solid lightgray;
+}
+
+.card-title {
+  color: #000;
+  height: 200px;
+}
+
+/* img {
+  height: 200px;
+} */

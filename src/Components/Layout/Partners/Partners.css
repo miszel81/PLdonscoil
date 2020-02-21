@@ -1,0 +1,17 @@
+.DonscoilPartners {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.DonscoilPartners img {
+  padding: 15px;
+}
+
+.partner-header {
+  padding-top: 150px;
+}
+
+img {
+  height: 200px;
+}
