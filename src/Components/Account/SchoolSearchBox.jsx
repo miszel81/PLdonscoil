@@ -20,6 +20,7 @@ class SchoolSearchBox extends Component {
 
   handleSubmit = async searchQueryEntered => {
     this.setState({ searchQueryEntered });
+    if (searchQueryEntered.length < 3) return null;
     this.props.props.history.push(`/results/${searchQueryEntered}`);
   };
 
