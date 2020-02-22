@@ -136,7 +136,7 @@ class NavBar extends Component {
                   <div className="Mobile-item">
                     <Link to="/forschools" style={{ color: "#fff" }}>
                       <span onClick={this.handleMenuClick}>
-                        <span className="green">initiatives for schools</span>
+                        <span className="">initiatives for schools</span>
                       </span>
                     </Link>
                   </div>
@@ -218,7 +218,7 @@ class NavBar extends Component {
                   </div>
                 )}
                 {user && (
-                  <div className="Mobile-item">
+                  <div className="Mobile-item-login">
                     <Link to="/logout" style={{ color: "#fff" }}>
                       <span onClick={this.handleMenuClick}>logout</span>
                     </Link>

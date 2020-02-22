@@ -137,6 +137,11 @@
     font-size: 1.3rem !important;
     padding: 10px;
   }
+
+  .Mobile-item-login {
+    font-size: 1.3rem !important;
+    padding: 10px;
+  }
 }
 
 @media all and (min-width: 960px) {

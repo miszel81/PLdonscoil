@@ -511,6 +511,9 @@ textarea {
   .Mobile-item {
     font-size: 1.3rem !important;
   }
+  .Mobile-item-login {
+    font-size: 1.3rem !important;
+  }
 
   .slogan h4 {
     font-size: 2rem;

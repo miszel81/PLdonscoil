@@ -555,7 +555,7 @@ class CreateAccount extends Form {
                     {!this.state.data.imgUrl && (
                       <button
                         onClick={this.handleUpload}
-                        className="btn btn-info ml-3"
+                        className="btn btn-info btn-sm mt-3"
                         disabled={this.checkFile()}
                       >
                         Upload
@@ -565,7 +565,7 @@ class CreateAccount extends Form {
                     {this.state.data.imgUrl && (
                       <button
                         onClick={this.handleRemoveImage}
-                        className="btn btn-danger ml-3"
+                        className="btn btn-danger btn-sm mt-3"
                       >
                         Remove
                       </button>
