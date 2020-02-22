@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "../Layout/NavBar.css";
+import ScrollLock from "react-scrolllock";
+
 // import SearchBox from "../Common/SearchBox";
 class NavBar extends Component {
   state = { menuOpen: false };
@@ -121,105 +123,113 @@ class NavBar extends Component {
         </div>
         <div className={this.setMobileClasses()}>
           {this.state.menuOpen && (
-            <div className="Mobile-items">
-              {!user && (
-                <div className="Mobile-item">
-                  <Link to="/ourmission" style={{ color: "#fff" }}>
-                    <span onClick={this.handleMenuClick}>what we do?</span>
-                  </Link>
-                </div>
-              )}
-              {!user && (
-                <div className="Mobile-item">
-                  <Link to="/forschools" style={{ color: "#fff" }}>
-                    <span onClick={this.handleMenuClick}>
-                      initiatives for <span className="green">schools</span>
-                    </span>
-                  </Link>
-                </div>
-              )}
-              {!user && (
-                <div className="Mobile-item">
-                  <Link to="/forsupporters" style={{ color: "#fff" }}>
-                    <span onClick={this.handleMenuClick}>
-                      support school projects
-                    </span>
-                  </Link>
-                </div>
-              )}
-              {!user && (
-                <div className="Mobile-item">
-                  <Link to="/register/school" style={{ color: "#fff" }}>
-                    <span onClick={this.handleMenuClick}>register</span> school
-                  </Link>
-                </div>
-              )}
-              {!user && (
-                <div className="Mobile-item">
-                  <Link to="/contact" style={{ color: "#fff" }}>
-                    <span onClick={this.handleMenuClick}>contact</span> donscoil
-                  </Link>
-                </div>
-              )}
-
-              {!user && (
-                <div className="Mobile-item">
-                  <p></p>
-                  <Link to="/login" style={{ color: "#fff" }}>
-                    <span onClick={this.handleMenuClick}>
-                      <span style={{ color: "#ff893f" }}>
-                        login <i className="fas fa-lock"></i>
+            <ScrollLock>
+              <div className="Mobile-items">
+                {!user && (
+                  <div className="Mobile-item">
+                    <Link to="/ourmission" style={{ color: "#fff" }}>
+                      <span onClick={this.handleMenuClick}>what we do?</span>
+                    </Link>
+                  </div>
+                )}
+                {!user && (
+                  <div className="Mobile-item">
+                    <Link to="/forschools" style={{ color: "#fff" }}>
+                      <span onClick={this.handleMenuClick}>
+                        initiatives for <span className="green">schools</span>
                       </span>
-                    </span>
-                  </Link>
-                </div>
-              )}
+                    </Link>
+                  </div>
+                )}
+                {!user && (
+                  <div className="Mobile-item">
+                    <Link to="/forsupporters" style={{ color: "#fff" }}>
+                      <span onClick={this.handleMenuClick}>
+                        support school projects
+                      </span>
+                    </Link>
+                  </div>
+                )}
+                {!user && (
+                  <div className="Mobile-item">
+                    <Link to="/register/school" style={{ color: "#fff" }}>
+                      <span onClick={this.handleMenuClick}>register</span>{" "}
+                      school
+                    </Link>
+                  </div>
+                )}
+                {!user && (
+                  <div className="Mobile-item">
+                    <Link to="/contact" style={{ color: "#fff" }}>
+                      <span onClick={this.handleMenuClick}>contact</span>{" "}
+                      donscoil
+                    </Link>
+                  </div>
+                )}
 
-              {user && <div className="Mobile-item">{this.renderSearch()}</div>}
+                {!user && (
+                  <div className="Mobile-item">
+                    <p></p>
+                    <Link to="/login" style={{ color: "#fff" }}>
+                      <span onClick={this.handleMenuClick}>
+                        <span style={{ color: "#ff893f" }}>
+                          login <i className="fas fa-lock"></i>
+                        </span>
+                      </span>
+                    </Link>
+                  </div>
+                )}
 
-              {user && (
-                <div className="Mobile-item">
-                  <Link to="/dashboard" style={{ color: "#fff" }}>
-                    <span onClick={this.handleMenuClick}>dashboard</span>
-                  </Link>
-                </div>
-              )}
-              {user && (
-                <div className="Mobile-item">
-                  <Link to="/projects/new/create" style={{ color: "#fff" }}>
-                    <span onClick={this.handleMenuClick}>
-                      create <span className="green">new</span> project
-                    </span>
-                  </Link>
-                </div>
-              )}
-              {user && (
-                <div className="Mobile-item">
-                  <Link
-                    to={`/projects/account/${user.account}`}
-                    style={{ color: "#fff" }}
-                  >
-                    <span onClick={this.handleMenuClick}>
-                      see all your projects
-                    </span>
-                  </Link>
-                </div>
-              )}
-              {user && (
-                <div className="Mobile-item">
-                  <Link to="/contact" style={{ color: "#fff" }}>
-                    <span onClick={this.handleMenuClick}>contact donscoil</span>
-                  </Link>
-                </div>
-              )}
-              {user && (
-                <div className="Mobile-item">
-                  <Link to="/logout" style={{ color: "#fff" }}>
-                    <span onClick={this.handleMenuClick}>logout</span>
-                  </Link>
-                </div>
-              )}
-            </div>
+                {user && (
+                  <div className="Mobile-item">{this.renderSearch()}</div>
+                )}
+
+                {user && (
+                  <div className="Mobile-item">
+                    <Link to="/dashboard" style={{ color: "#fff" }}>
+                      <span onClick={this.handleMenuClick}>dashboard</span>
+                    </Link>
+                  </div>
+                )}
+                {user && (
+                  <div className="Mobile-item">
+                    <Link to="/projects/new/create" style={{ color: "#fff" }}>
+                      <span onClick={this.handleMenuClick}>
+                        create <span className="green">new</span> project
+                      </span>
+                    </Link>
+                  </div>
+                )}
+                {user && (
+                  <div className="Mobile-item">
+                    <Link
+                      to={`/projects/account/${user.account}`}
+                      style={{ color: "#fff" }}
+                    >
+                      <span onClick={this.handleMenuClick}>
+                        see all your projects
+                      </span>
+                    </Link>
+                  </div>
+                )}
+                {user && (
+                  <div className="Mobile-item">
+                    <Link to="/contact" style={{ color: "#fff" }}>
+                      <span onClick={this.handleMenuClick}>
+                        contact donscoil
+                      </span>
+                    </Link>
+                  </div>
+                )}
+                {user && (
+                  <div className="Mobile-item">
+                    <Link to="/logout" style={{ color: "#fff" }}>
+                      <span onClick={this.handleMenuClick}>logout</span>
+                    </Link>
+                  </div>
+                )}
+              </div>
+            </ScrollLock>
           )}
         </div>
       </div>

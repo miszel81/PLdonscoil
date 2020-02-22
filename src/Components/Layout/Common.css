@@ -1,5 +1,7 @@
 /* Backgrounds */
-
+/* body {
+  width: 100vw;
+} */
 input {
   font-family: "Open Sans Condensed", sans-serif;
   font-size: 1 rem;
@@ -70,6 +72,7 @@ input {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+
   background-position: center;
 }
 
