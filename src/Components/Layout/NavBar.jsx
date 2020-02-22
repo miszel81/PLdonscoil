@@ -168,8 +168,7 @@ class NavBar extends Component {
                 )}
 
                 {!user && (
-                  <div className="Mobile-item">
-                    <p></p>
+                  <div className="Mobile-item-login">
                     <Link to="/login" style={{ color: "#fff" }}>
                       <span onClick={this.handleMenuClick}>
                         <span style={{ color: "#ff893f" }}>

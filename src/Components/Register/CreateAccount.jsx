@@ -564,7 +564,7 @@ class CreateAccount extends Form {
 
                     {this.state.data.imgUrl && (
                       <button
-                        onClick={this.handleUpload}
+                        onClick={this.handleRemoveImage}
                         className="btn btn-danger ml-3"
                       >
                         Remove
@@ -578,7 +578,7 @@ class CreateAccount extends Form {
                         this.state.image.size < 500000) ? (
                         ""
                       ) : (
-                        <span style={{ color: "red" }}>
+                        <span className="badge badge-danger mt-3">
                           "Sorry! Only .jpg or .png files. Max size 0.5Mb"
                         </span>
                       )

@@ -67,7 +67,7 @@ input {
 }
 .homepage-background {
   position: relative;
-  /* background-image: url("../Layout/img/girl.jpg"); */
+
   background-image: url("../Layout/img/school_search_box1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -597,7 +597,7 @@ textarea {
   }
 
   .btn {
-    font-size: 1 rem;
+    font-size: 0.7rem !important;
   }
 
   .mobile-reference {
