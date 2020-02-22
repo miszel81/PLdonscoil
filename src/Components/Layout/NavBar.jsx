@@ -136,7 +136,7 @@ class NavBar extends Component {
                   <div className="Mobile-item">
                     <Link to="/forschools" style={{ color: "#fff" }}>
                       <span onClick={this.handleMenuClick}>
-                        initiatives for <span className="green">schools</span>
+                        <span className="green">initiatives for schools</span>
                       </span>
                     </Link>
                   </div>
@@ -161,8 +161,7 @@ class NavBar extends Component {
                 {!user && (
                   <div className="Mobile-item">
                     <Link to="/contact" style={{ color: "#fff" }}>
-                      <span onClick={this.handleMenuClick}>contact</span>{" "}
-                      donscoil
+                      <span onClick={this.handleMenuClick}>contact us</span>{" "}
                     </Link>
                   </div>
                 )}
@@ -214,9 +213,7 @@ class NavBar extends Component {
                 {user && (
                   <div className="Mobile-item">
                     <Link to="/contact" style={{ color: "#fff" }}>
-                      <span onClick={this.handleMenuClick}>
-                        contact donscoil
-                      </span>
+                      <span onClick={this.handleMenuClick}>contact us</span>
                     </Link>
                   </div>
                 )}
