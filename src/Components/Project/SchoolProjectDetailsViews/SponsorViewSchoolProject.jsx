@@ -15,6 +15,8 @@ class SponsorViewSchoolProject extends Component {
       owner,
       observeHandler,
       watchlistRenderHandler,
+      // supportHandler,
+      // supportRenderHandler,
       unsupportHandler
     } = this.props;
     return (
@@ -79,10 +81,9 @@ class SponsorViewSchoolProject extends Component {
                   )}
                   {/* <CustomButton
                     value={supportRenderHandler()}
-                    className={"btn btn-outline-secondary"}
-                    onClick={() => {
-                      supportHandler();
-                    }}
+                    
+                    className={"btn  btn-outline-secondary"}
+                    onClick={supportHandler}
                   /> */}
                   {/* If project supported remove from watchlist is not needed. */}
                   {!this.props.disabledSupport && (

@@ -126,9 +126,7 @@ const OwnerViewSchoolProject = ({
             <CustomButton
               value={activateRenderHandler()}
               className={"btn btn-dark"}
-              onClick={() => {
-                activateHandler();
-              }}
+              onClick={activateHandler}
             />
             {/* <Link to="/close" className="btn btn-dark disabled">
               Unpublish

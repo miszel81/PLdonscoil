@@ -32,21 +32,31 @@ import SponsorViewSponsorProject from "./SponsorProjectDetailsView/SponsorViewSp
 import { css } from "glamor";
 
 class ProjectDetails extends Component {
-  state = {
-    data: {},
-    disabledObserve: false,
-    disabledApply: false,
-    disabledSupport: false,
-    owner: {},
-    campaign: {},
-    hands: [],
-    application: {},
-    loading: true,
-    errors: [],
-    loggedInUser: {}
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      data: {},
+      disabledObserve: false,
+      disabledApply: false,
+      disabledSupport: false,
+      owner: {},
+      campaign: {},
+      hands: [],
+      application: {},
+      loading: true,
+      errors: [],
+      loggedInUser: {}
+    };
 
-  applicationHandler = async () => {
+    this.applicationHandler = this.applicationHandler.bind(this);
+    this.activateHandler = this.activateHandler.bind(this);
+    this.activateRenderHandler = this.activateRenderHandler.bind(this);
+    this.supportRenderHandler = this.supportRenderHandler.bind(this);
+    this.applyRenderHandler = this.applyRenderHandler.bind(this);
+    this.applyHandler = this.applyHandler.bind(this);
+  }
+
+  async applicationHandler() {
     try {
       const projectId = this.props.projectId;
       const accountId = this.props.props.user.account;
@@ -55,7 +65,7 @@ class ProjectDetails extends Component {
     } catch (error) {
       return null;
     }
-  };
+  }
 
   async populateState() {
     try {
@@ -85,7 +95,7 @@ class ProjectDetails extends Component {
     }
   }
   //Activate logic
-  activateHandler = async () => {
+  async activateHandler() {
     const projectId = this.props.projectId;
     const response = await activateProject(projectId);
     const data = { ...this.state.data };
@@ -93,14 +103,14 @@ class ProjectDetails extends Component {
       data.isActivated = data.isActivated ? false : true;
       this.setState({ data });
     }
-  };
+  }
 
-  activateRenderHandler = () => {
+  activateRenderHandler() {
     if (this.state.data.isActivated) {
       return "Suspend";
     }
     return "Publish";
-  };
+  }
 
   //Support logic
   async checkSupport() {
@@ -119,16 +129,15 @@ class ProjectDetails extends Component {
       return;
     }
   }
-  supportRenderHandler = () => {
-    // const user = getUser();
+  supportRenderHandler() {
     if (this.props.loggedInUser) {
       if (this.state.disabledSupport) {
-        return "Remove from supported";
+        return "Withdraw support";
       }
       return "Support";
     }
     return "Support";
-  };
+  }
 
   supportHandler = async () => {
     const projectId = this.props.projectId;
@@ -146,7 +155,7 @@ class ProjectDetails extends Component {
 
   unSupportHandler = async () => {
     const projectId = this.props.projectId;
-    const user = getUser();
+    const user = this.props.loggedInUser;
     if (this.state.disabledSupport) {
       await unSupportProject(projectId, user.account, user._id);
       this.setState({ disabledSupport: false });
@@ -157,7 +166,7 @@ class ProjectDetails extends Component {
   //Watchlist logic
   async checkObserve() {
     const projectId = this.props.projectId;
-    const user = getUser();
+    const user = this.props.loggedInUser;
     if (user) {
       const campaign = await getCampaignObserve(projectId, user.account);
       if (campaign.data === this.state.disabledObserve) return;
@@ -169,7 +178,7 @@ class ProjectDetails extends Component {
     }
   }
   observeHandler = async () => {
-    const user = getUser();
+    const user = this.props.loggedInUser;
     const projectId = this.props.projectId;
     if (this.state.disabledObserve) {
       await unObserveProject(projectId, user.account);
@@ -182,7 +191,7 @@ class ProjectDetails extends Component {
     }
   };
   watchlistRenderHandler = () => {
-    const user = getUser();
+    const user = this.props.loggedInUser;
     if (user) {
       if (this.state.disabledObserve) {
         return "Remove from watchlist";
@@ -195,7 +204,7 @@ class ProjectDetails extends Component {
   //Apply Logic
   async checkApply() {
     const projectId = this.props.projectId;
-    const user = getUser();
+    const user = this.props.loggedInUser;
     if (user) {
       const campaign = await getCampaignApply(projectId, user.account);
       if (campaign.data === this.state.disabledApply) return;
@@ -206,11 +215,11 @@ class ProjectDetails extends Component {
       return;
     }
   }
-  applyHandler = async () => {
-    const user = getUser();
+  async applyHandler() {
+    // const user = getUser();
     const projectId = this.props.projectId;
     if (this.state.disabledApply) {
-      await resignProject(projectId, user.account);
+      await resignProject(projectId, this.props.loggedInUser.account);
       await deleteApplication(this.state.application._id);
       this.setState({ disabledApply: false });
       this.notifyD();
@@ -220,10 +229,10 @@ class ProjectDetails extends Component {
       this.setState({ disabledApply: true });
       // this.notifyA();
     }
-  };
+  }
 
-  applyRenderHandler = () => {
-    const user = getUser();
+  applyRenderHandler() {
+    const user = this.props.loggedInUser;
     if (user) {
       if (this.state.disabledApply) {
         return "Resign";
@@ -231,7 +240,7 @@ class ProjectDetails extends Component {
       return "Apply";
     }
     return "Apply";
-  };
+  }
 
   //toasts
   notifyA = () => toast("You have applied! ", { containerId: "A" });

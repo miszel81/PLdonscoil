@@ -12,11 +12,9 @@ const payloadKey = "session";
 
 function getUser() {
   const key = process.env.REACT_APP_SESSION_KEY;
-  // console.log("key:", key);
   try {
     const data = localStorage.getItem(payloadKey);
     const decrypted = CryptoJS.AES.decrypt(data, key);
-    // KEY ZMIENIC NA 16 ZNAKOW, ZAMKNAC W ENV VARIABLE
     const user = JSON.parse(decrypted.toString(CryptoJS.enc.Utf8));
     return user;
   } catch (ex) {
