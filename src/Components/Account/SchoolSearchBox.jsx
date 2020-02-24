@@ -53,7 +53,7 @@ class SchoolSearchBox extends Component {
         <div className="container-fluid mt-5">
           <div className="slogan">
             <h4>Your kids do amazing things</h4>
-            <h5>Support their school projects today!</h5>
+            <h5>Support their school projects!</h5>
           </div>
 
           <div className="searchbox">
@@ -66,8 +66,8 @@ class SchoolSearchBox extends Component {
             <div className="col-md-5 col-sm-5 searchResultsTab">
               <div className="list-group m-0 noSchool">
                 {schools === "noResult" ? (
-                  <span className="foundNoSchool">
-                    Sorry! I can't find this school. Try entering location...
+                  <span className="badge badge-danger foundNoSchool">
+                    Sorry! I can't find any school.
                   </span>
                 ) : (
                   schools.map(school => (

@@ -43,10 +43,18 @@ h5 {
   .foundNoSchool {
     font-size: 1rem;
   }
+  .slogan {
+    padding-top: 1rem;
+    padding-right: 120px;
+  }
 }
 
 @media all and (max-width: 400px) {
   .list-group-item {
     font-size: 1rem;
+  }
+  .slogan {
+    padding-top: 0.1rem;
+    padding-right: 50px;
   }
 }
