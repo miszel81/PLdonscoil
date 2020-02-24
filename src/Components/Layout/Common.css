@@ -518,13 +518,19 @@ textarea {
 }
 
 @media only screen and (max-width: 600px) {
+  .slogan h4 {
+    font-size: 3.5rem;
+  }
+  .slogan h5 {
+    font-size: 1rem;
+  }
   .homepage-background {
     position: relative;
 
-    background-image: url("../Layout/img/mobile_homepage.png");
+    background-image: url("../Layout/img/homePageBackground1.jpg");
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+    background-size: cover;
+    background-position: top center;
     height: 100vh;
   }
   .school-app-title {
