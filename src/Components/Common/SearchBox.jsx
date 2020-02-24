@@ -4,7 +4,7 @@ const SearchBox = ({ value, onChange, onSubmit }) => {
   return (
     <div className="container">
       <div className="row">
-        <div className="col-md-8 offset-md-2">
+        <div className="col-md-8">
           {/* <form autoComplete="off"> */}
           {/* <input type="hidden" value="something" /> */}
 

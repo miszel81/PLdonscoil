@@ -25,13 +25,13 @@
 h4 {
   font-size: 4rem;
   color: white;
-  text-align: center;
+  text-align: left;
 }
 
 h5 {
   font-size: 1.5rem;
   color: white;
-  text-align: center;
+  text-align: left;
 }
 
 .foundNoSchool {
@@ -43,18 +43,6 @@ h5 {
   .foundNoSchool {
     font-size: 1rem;
   }
-}
-
-h4 {
-  font-size: 4rem;
-  color: white;
-  text-align: left;
-}
-
-h5 {
-  font-size: 1rem;
-  color: white;
-  text-align: left;
 }
 
 @media all and (max-width: 400px) {
