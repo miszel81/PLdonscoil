@@ -235,24 +235,24 @@
   background-position: center;
 }
 
-.forschools-background-image {
+/* .forschools-background-image {
   background-size: contain;
   background-image: url("./img/coding.jpg");
   background-repeat: no-repeat;
-}
-.forschools-background-image-register {
+} */
+/* .forschools-background-image-register {
   background-size: contain;
   background-image: url("./img/geometry.jpg");
   background-repeat: no-repeat;
-}
-.forsupporters-background-image {
+} */
+/* .forsupporters-background-image {
   background-size: contain;
   background-image: url("./img/clean.jpg");
   background-repeat: no-repeat;
-}
+} */
 .forsupporters-background-image-register {
   background-size: contain;
-  background-image: url("./img/promote.jpg");
+  /* background-image: url("./img/promote.jpg"); */
   background-repeat: no-repeat;
 }
 .about-background-image-schools {

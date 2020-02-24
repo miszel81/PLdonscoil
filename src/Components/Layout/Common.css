@@ -68,7 +68,7 @@ input {
 .homepage-background {
   position: relative;
 
-  background-image: url("../Layout/img/school_search_box1.jpg");
+  background-image: url("../Layout/img/homePageBackground1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -105,7 +105,7 @@ input {
 .supporters-background {
   /* position: relative; */
   /* background-image: linear-gradient(#333, #fff); */
-  background-image: url("../Layout/img/library.jpg");
+  background-image: url("../Layout/img/forSponsors1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 65vh;
@@ -114,7 +114,7 @@ input {
 .support-background {
   /* position: relative; */
   /* background-image: linear-gradient(#333, #fff); */
-  background-image: url("../Layout/img/support_background1.jpg");
+  /* background-image: url("../Layout/img/support_background1.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
   height: 55vh;
@@ -123,7 +123,7 @@ input {
 .about2-background {
   position: relative;
   /* background-image: linear-gradient(#333, #fff); */
-  background-image: url("../Layout/img/fractal.jpg");
+  /* background-image: url("../Layout/img/fractal.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
   height: 65vh;
@@ -133,20 +133,6 @@ input {
 
 .table-background {
   background-image: linear-gradient(#333, #fff);
-}
-
-.eryk-background-tree {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.1),
-      rgb(255, 255, 255)
-    ),
-    url("../Layout/img/eryk_tree.jpeg");
-
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  background-position: center;
 }
 
 /* for paragraphs with much text */
