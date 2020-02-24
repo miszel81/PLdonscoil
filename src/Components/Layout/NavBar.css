@@ -20,7 +20,7 @@
 
 .Navbar-brand a {
   /* color: #169b62; */
-  color: lightgrey;
+  color: #fff;
   text-decoration: none;
   cursor: pointer;
   z-index: 200;
