@@ -25,7 +25,7 @@ const HomePageSet = props => {
           content="Donscoil - Find. Create. Support. An innovative online community of schools, parents and supporting companies in Ireland."
         />
       </Helmet>
-      <div className="ge-background">
+      <div className="homepage-background">
         <div className="container-fluid">
           <NavBar user={props.user} />
         </div>
@@ -39,7 +39,7 @@ const HomePageSet = props => {
         </div>
       </div>
 
-      <div className="container-fluid geSet home-trending-project u-paddingBottom60">
+      <div className="container-fluid HomePagegeSet home-trending-project u-paddingBottom60">
         <div className="trendingprojects">
           <TrendingProjects />
         </div>
@@ -52,7 +52,7 @@ const HomePageSet = props => {
         <RecentlyRegistered />
       </div>
 
-      <div className="container-fluid geSet">
+      <div className="container-fluid HomePageSet">
         <div className="partners">
           <Partners />
         </div>
