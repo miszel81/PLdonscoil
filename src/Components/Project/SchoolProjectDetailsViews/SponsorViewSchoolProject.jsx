@@ -72,9 +72,7 @@ class SponsorViewSchoolProject extends Component {
                   ) : (
                     <button
                       className="btn btn-danger"
-                      onClick={() => {
-                        unsupportHandler();
-                      }}
+                      onClick={unsupportHandler}
                     >
                       Withdraw support
                     </button>

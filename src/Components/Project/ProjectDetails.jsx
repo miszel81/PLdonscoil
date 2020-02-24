@@ -54,6 +54,7 @@ class ProjectDetails extends Component {
     this.supportRenderHandler = this.supportRenderHandler.bind(this);
     this.applyRenderHandler = this.applyRenderHandler.bind(this);
     this.applyHandler = this.applyHandler.bind(this);
+    this.unSupportHandler = this.unSupportHandler.bind(this);
   }
 
   async applicationHandler() {
@@ -153,7 +154,7 @@ class ProjectDetails extends Component {
     }
   };
 
-  unSupportHandler = async () => {
+  async unSupportHandler() {
     const projectId = this.props.projectId;
     const user = this.props.loggedInUser;
     if (this.state.disabledSupport) {
@@ -161,7 +162,7 @@ class ProjectDetails extends Component {
       this.setState({ disabledSupport: false });
       this.notifyG();
     }
-  };
+  }
 
   //Watchlist logic
   async checkObserve() {

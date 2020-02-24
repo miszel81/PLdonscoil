@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { checkToken } from "../../services/authServices";
+import { toast } from "react-toastify";
 
 export default function authOnly(ProtectedComponent) {
   return class extends Component {
@@ -16,8 +17,11 @@ export default function authOnly(ProtectedComponent) {
       } catch (ex) {
         if (ex.response && ex.response.status === 401) {
           window.location = "/login";
-        } else {
+        } else if (ex.response && ex.response.status === 400) {
           window.location = "/logout";
+        } else {
+          console.log("ELSE", ex);
+          toast.error("Unexpected error! Try again later!");
         }
       }
     }
