@@ -9,10 +9,20 @@
   font-size: 1.5rem !important;
 }
 
+.searchResultsTab {
+  padding-left: 0 !important;
+}
+
 @media only screen and (max-width: 600px) {
   .mainsearch {
     font-size: 1.5rem;
     margin-top: 2rem;
     width: 70%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .mainSearchBox {
+    padding-left: 0 !important;
   }
 }

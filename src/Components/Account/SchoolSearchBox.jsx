@@ -52,18 +52,18 @@ class SchoolSearchBox extends Component {
       <React.Fragment>
         <div className="container-fluid mt-5">
           <div className="slogan">
-            <h4>Your kids can do amazing things</h4>
-            <h5>They just need a bit of your support</h5>
+            <h4>Your kids do amazing things</h4>
+            <h5>Support their school projects today!</h5>
           </div>
 
-          <div className="container searchbox">
+          <div className="searchbox">
             <SearchBox
               value={this.state.searchQuery}
               onChange={this.handleSearch}
               onSubmit={this.handleSubmit}
             />
 
-            <div className="col-md-8 offset-md-2">
+            <div className="col-md-5 col-sm-5 searchResultsTab">
               <div className="list-group m-0 noSchool">
                 {schools === "noResult" ? (
                   <span className="foundNoSchool">
