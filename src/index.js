@@ -4,6 +4,12 @@ import "./index.css";
 import App from "../src/Containers/App";
 import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter } from "react-router-dom";
+import Raven from "raven-js";
+
+Raven.config("https://8c37081250524f85892c48886769901f@sentry.io/1476320", {
+  release: "1-0-0",
+  environment: "production"
+}).install();
 
 ReactDOM.render(
   <BrowserRouter>

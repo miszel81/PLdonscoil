@@ -1,6 +1,7 @@
 import axios from "axios";
-// import logger from "./logService";
+// import logger from "./logger";
 import { toast } from "react-toastify";
+import Raven from "raven-js";
 
 // Sprawdza czy jest sesja, jesli tak to wysyla w hedersach, zeby back sprawdzil czy jest i sesja i token
 const session = localStorage.getItem("session");
@@ -18,7 +19,7 @@ axios.interceptors.response.use(null, error => {
     error.response.status < 500;
 
   if (!expectedError) {
-    // logger.log(error);
+    Raven.captureException(error);
     toast.error("Unexpected error! Try again later!");
   }
 
