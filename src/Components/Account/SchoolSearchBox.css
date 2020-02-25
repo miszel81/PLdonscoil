@@ -121,3 +121,25 @@ h5 {
     margin-top: 15px !important;
   }
 }
+
+@media all and (max-height: 360px) {
+  .foundNoSchool {
+    font-size: 1rem;
+  }
+  .slogan {
+    padding-top: 1rem;
+    padding-right: 120px;
+  }
+  .slogan h4 {
+    font-size: 1.5rem !important;
+  }
+  .slogan h5 {
+    font-size: 0.8rem !important;
+  }
+  .mainsearch.form-control {
+    font-size: 1rem !important;
+  }
+  .Navbar-container {
+    margin-top: 15px !important;
+  }
+}
