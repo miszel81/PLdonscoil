@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "../Layout/NavBar.css";
-import ScrollLock, { TouchScrollable } from "react-scrolllock";
+import ScrollLock from "react-scrolllock";
 
 // import SearchBox from "../Common/SearchBox";
 class NavBar extends Component {

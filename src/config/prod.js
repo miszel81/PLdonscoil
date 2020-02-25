@@ -1,12 +1,11 @@
 module.exports = {
-  apiUrl: "https://donscoilbackend.herokuapp.com/api",
-  apiAuth: "https://donscoilbackend.herokuapp.com/api/auth",
-  apiDashboard: "https://donscoilbackend.herokuapp.com/api/accounts/myprofile",
-  apiAccount: "https://donscoilbackend.herokuapp.com/api/accounts/",
-  apiUser: "https://donscoilbackend.herokuapp.com/api/users/",
-  apiProjects: "https://donscoilbackend.herokuapp.com/api/projects/",
-  apiCampaigns: "https://donscoilbackend.herokuapp.com/api/campaigns/",
-  apiAccountProjects:
-    "https://donscoilbackend.herokuapp.com/api/projects/account/",
-  apiHand: "https://donscoilbackend.herokuapp.com/api/hand/"
+  apiUrl: "https://back.donscoil.ie/api",
+  apiAuth: "https://back.donscoil.ie/api/auth",
+  apiDashboard: "https://back.donscoil.ie/api/accounts/myprofile",
+  apiAccount: "https://back.donscoil.ie/api/accounts/",
+  apiUser: "https://back.donscoil.ie/api/users/",
+  apiProjects: "https://back.donscoil.ie/api/projects/",
+  apiCampaigns: "https://back.donscoil.ie/api/campaigns/",
+  apiAccountProjects: "https://back.donscoil.ie/api/projects/account/",
+  apiHand: "https://back.donscoil.ie/api/hand/"
 };
