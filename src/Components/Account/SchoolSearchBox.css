@@ -49,6 +49,25 @@ h5 {
   }
 }
 
+@media all and (max-width: 700px) {
+  .foundNoSchool {
+    font-size: 1rem;
+  }
+  .slogan {
+    padding-top: 1rem;
+    padding-right: 120px;
+  }
+  .slogan h4 {
+    font-size: 2rem;
+  }
+  .slogan h5 {
+    font-size: 1rem;
+  }
+  .mainsearch.form-control {
+    font-size: 1rem !important;
+  }
+}
+
 @media all and (max-width: 400px) {
   .list-group-item {
     font-size: 1rem;
@@ -56,5 +75,49 @@ h5 {
   .slogan {
     padding-top: 0.1rem;
     padding-right: 50px;
+  }
+}
+
+@media all and (max-width: 580px) and (min-width: 500px) {
+  .foundNoSchool {
+    font-size: 1rem;
+  }
+  .slogan {
+    padding-top: 1rem;
+    padding-right: 120px;
+  }
+  .slogan h4 {
+    font-size: 2rem !important;
+  }
+  .slogan h5 {
+    font-size: 1rem !important;
+  }
+  .mainsearch.form-control {
+    font-size: 1rem !important;
+  }
+  .Navbar-container {
+    margin-top: 15px !important;
+  }
+}
+
+@media all and (max-width: 800px) and (min-width: 710px) {
+  .foundNoSchool {
+    font-size: 1rem;
+  }
+  .slogan {
+    padding-top: 1rem;
+    padding-right: 120px;
+  }
+  .slogan h4 {
+    font-size: 2rem !important;
+  }
+  .slogan h5 {
+    font-size: 1rem !important;
+  }
+  .mainsearch.form-control {
+    font-size: 1rem !important;
+  }
+  .Navbar-container {
+    margin-top: 15px !important;
   }
 }
