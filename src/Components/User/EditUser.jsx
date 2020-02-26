@@ -170,6 +170,64 @@ class EditUser extends Form {
                 {this.checkAdmin() && (
                   <div>
                     <button
+                      type="button"
+                      className="btn btn-outline-danger mt-3"
+                      data-toggle="modal"
+                      data-target="#exampleModal"
+                    >
+                      Delete user
+                    </button>
+
+                    <div
+                      className="modal fade"
+                      id="exampleModal"
+                      tabindex="-1"
+                      role="dialog"
+                      aria-labelledby="exampleModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div className="modal-dialog" role="document">
+                        <div className="modal-content">
+                          <div className="modal-header">
+                            <h5 className="modal-title" id="exampleModalLabel">
+                              Delete user
+                            </h5>
+                            <button
+                              type="button"
+                              className="close"
+                              data-dismiss="modal"
+                              aria-label="Close"
+                            >
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div className="modal-body">
+                            Please, confirm you wish to delete this user.
+                          </div>
+                          <div className="modal-footer">
+                            <button
+                              type="button"
+                              className="btn btn-secondary"
+                              data-dismiss="modal"
+                            >
+                              Close
+                            </button>
+                            <button
+                              type="button"
+                              className="btn btn-danger"
+                              onClick={() => {
+                                this.deleteHandler();
+                                window.location = `/account/users/${this.props.user.account}`;
+                              }}
+                            >
+                              Delete user
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* <button
                       className="btn btn-outline-danger btn-sm mt-3"
                       onClick={() => {
                         if (
@@ -182,7 +240,7 @@ class EditUser extends Form {
                       }}
                     >
                       Delete User
-                    </button>
+                    </button> */}
                   </div>
                 )}
               </div>

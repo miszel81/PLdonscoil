@@ -7,6 +7,17 @@ input {
   font-size: 1 rem;
 }
 
+.modal-backdrop {
+  z-index: -3;
+}
+/* .modal {
+  z-index: 1060;
+} */
+div#exampleModal {
+  background-color: #000;
+  opacity: 1;
+}
+
 .Toastify__toast--default {
   background: #fff !important;
   color: #000 !important;
