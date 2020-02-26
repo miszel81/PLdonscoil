@@ -1,13 +1,9 @@
 import http from "./httpService";
 import { apiProjects, apiAccountProjects, apiHand } from "../config/endpoints";
 
-// "apiProjects": "https://donscoilbackend.herokuapp.com/api/projects/",
-// "apiAccountProjects": "https://donscoilbackend.herokuapp.com/api/projects/account/"
-
 const apiAplication = apiProjects + "apply/";
 const apiGetAplication = apiProjects + "application/";
 const apiActivate = apiProjects + "activate/";
-// const apiHand = "http://localhost:3400/api/hand/";
 
 export function saveProject(project) {
   return http.post(apiProjects, project);

@@ -43,8 +43,14 @@ class ProjectsTable extends Component {
   ];
 
   async componentDidMount() {
-    const { data: projects } = await getProjects(this.props.projectType);
-    this.setState({ projects, loading: false });
+    try {
+      const { data: projects } = await getProjects(this.props.projectType);
+      this.setState({ projects, loading: false });
+    } catch (ex) {
+      if (ex.response && ex.response.status === 404) {
+        this.setState({ loading: false });
+      }
+    }
   }
 
   handleSort = sortColumn => {
