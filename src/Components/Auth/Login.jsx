@@ -35,7 +35,7 @@ class Login extends Form {
       console.log("response:", response);
       localStorage.setItem("session", response.headers["session"]);
       const { state } = this.props.location;
-      window.location = state ? state.from.pathname : "/Dashboard";
+      // window.location = state ? state.from.pathname : "/Dashboard";
     } catch (ex) {
       if (ex.response && ex.response.status === 400) {
         const errors = { ...this.state.errors };
