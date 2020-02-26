@@ -32,9 +32,10 @@ class Login extends Form {
     try {
       const { data } = this.state;
       const response = await login(data.email, data.password);
+      console.log("response:", response);
       localStorage.setItem("session", response.headers["session"]);
       const { state } = this.props.location;
-      window.location = state ? state.from.pathname : "/Dashboard";
+      // window.location = state ? state.from.pathname : "/Dashboard";
     } catch (ex) {
       if (ex.response && ex.response.status === 400) {
         const errors = { ...this.state.errors };

@@ -4,7 +4,7 @@ import { apiAuth, apiUser } from "../config/endpoints";
 const apiAccountUsers = apiUser + "accounts/";
 
 export function login(email, password) {
-  return http.post(apiAuth, { email, password }); //,{ withCredentials: true }
+  return http.post(apiAuth, { email, password }, { withCredentials: true }); //,{ withCredentials: true }
 }
 
 export function getUserDetails(id) {
