@@ -16,11 +16,11 @@ export default function authOnly(ProtectedComponent) {
         }
       } catch (ex) {
         if (ex.response && ex.response.status === 401) {
-          console.log(ex.response);
-          // window.location = "/login";
+          // console.log(ex.response);
+          window.location = "/login";
         } else if (ex.response && ex.response.status === 400) {
-          console.log(ex.response);
-          // window.location = "/logout";
+          // console.log(ex.response);
+          window.location = "/logout";
         } else {
           console.log("ELSE", ex);
           toast.error("Unexpected error! Try again later!");
