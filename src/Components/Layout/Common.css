@@ -10,6 +10,9 @@ input {
 .modal-backdrop {
   z-index: -3;
 }
+.modal-open {
+  font-size: 1.5rem;
+}
 /* .modal {
   z-index: 1060;
 } */
