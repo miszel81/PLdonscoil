@@ -68,8 +68,14 @@ class EditAccount extends Form {
   }
 
   doSubmit = async () => {
+    // słaby kod do poprawy błędu z walidacją nr konta przez Joi.
+    let dane = this.state.data;
+    if (this.props.user.type === "Sponsor") {
+      dane["bankAccountNumber"] = "not provided";
+    }
+
     try {
-      await editAccount(this.props.modifyAccount, this.state.data);
+      await editAccount(this.props.modifyAccount, dane);
       window.location = "/dashboard";
       // this.props.history.push("/dashboard");
     } catch (ex) {
