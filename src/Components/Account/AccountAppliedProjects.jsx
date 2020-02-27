@@ -73,7 +73,9 @@ class AccountAppliedProjects extends Component {
             </div>
           ) : this.state.projects.length === 0 ? (
             <div>
-              <h1>Sorry, you have not applied yet.</h1>
+              <h5 className="mb-3" style={{ color: "#333", fontSize: "1rem" }}>
+                Sorry, no applications yet.
+              </h5>
             </div>
           ) : (
             <div>
