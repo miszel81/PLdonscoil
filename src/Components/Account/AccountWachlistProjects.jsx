@@ -73,7 +73,9 @@ class AccountWatchlistProjects extends Component {
             </div>
           ) : this.state.projects.length === 0 ? (
             <div>
-              <h1>Sorry, no projects on your watchlist.</h1>
+              <h5 className="mb-3" style={{ color: "#333", fontSize: "1rem" }}>
+                Sorry, no projects on your watchlist.
+              </h5>
             </div>
           ) : (
             <div>

@@ -19,11 +19,11 @@ class AccountUsers extends Component {
   columns = [
     {
       path: "lastName",
-      label: "Last name"
+      label: "Name"
     },
     {
       path: "firstName",
-      label: "First Name"
+      label: "Surname"
     },
     { path: "title", label: "Title" },
     {

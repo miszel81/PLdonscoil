@@ -53,7 +53,7 @@ class SchoolSearchBox extends Component {
         <div className="container-fluid mt-5">
           <div className="slogan">
             <h4>Your kids do amazing things</h4>
-            <h5>Support their school projects!</h5>
+            <h5>Support their school projects today!</h5>
           </div>
 
           <div className="searchbox">
