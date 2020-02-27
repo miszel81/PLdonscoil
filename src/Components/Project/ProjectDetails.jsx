@@ -4,6 +4,7 @@ import {
   getProjectDetails,
   getApplication,
   deleteApplication,
+  deleteProject,
   activateProject,
   getHands
 } from "../../services/projectService";
@@ -55,6 +56,7 @@ class ProjectDetails extends Component {
     this.applyRenderHandler = this.applyRenderHandler.bind(this);
     this.applyHandler = this.applyHandler.bind(this);
     this.unSupportHandler = this.unSupportHandler.bind(this);
+    this.deleteHandler = this.deleteHandler.bind(this);
   }
 
   async applicationHandler() {
@@ -95,6 +97,20 @@ class ProjectDetails extends Component {
       }
     }
   }
+  //Delete logic
+
+  async deleteHandler() {
+    const response = await deleteProject(this.props.projectId);
+    if (response.status === 201) {
+      this.props.props.history.push(
+        `/projects/account/${this.state.data.account._id}`
+      );
+    } else {
+      return;
+      //DO ZMIANY NA ERROR
+    }
+  }
+
   //Activate logic
   async activateHandler() {
     const projectId = this.props.projectId;
@@ -340,6 +356,7 @@ class ProjectDetails extends Component {
                 owner={owner}
                 campaign={campaign}
                 activateHandler={this.activateHandler}
+                deleteHandler={this.deleteHandler}
                 activateRenderHandler={this.activateRenderHandler}
                 hands={hands}
                 projectId={this.props.projectId}
@@ -374,6 +391,7 @@ class ProjectDetails extends Component {
               data={data}
               owner={owner}
               activateHandler={this.activateHandler}
+              deleteHandler={this.deleteHandler}
               activateRenderHandler={this.activateRenderHandler}
               campaign={campaign}
               projectId={this.props.projectId}
