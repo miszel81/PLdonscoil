@@ -23,7 +23,7 @@ class AccountProjectsTable extends Component {
   columns = [
     {
       path: "name",
-      label: "Project name",
+      label: "Name",
       content: project => (
         <Link to={`/projects/${project._id}`}>{project.name}</Link>
       )

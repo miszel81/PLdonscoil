@@ -132,16 +132,15 @@ const OwnerViewSponsorProject = ({
                 activateHandler();
               }}
             />
+            <button
+              type="button"
+              className="btn btn-danger"
+              data-toggle="modal"
+              data-target="#exampleModal"
+            >
+              Delete Project
+            </button>
             <div>
-              <button
-                type="button"
-                className="btn btn-outline-danger mt-3"
-                data-toggle="modal"
-                data-target="#exampleModal"
-              >
-                Delete Project
-              </button>
-
               <div
                 className="modal fade"
                 id="exampleModal"
