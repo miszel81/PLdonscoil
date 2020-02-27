@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { deleteProject } from "../../../services/projectService";
 import { Helmet } from "react-helmet";
 import CustomButton from "../CustomButton";
 
@@ -13,11 +12,6 @@ const OwnerViewSchoolProject = ({
   activateRenderHandler,
   hands
 }) => {
-  deleteHandler = () => {
-    deleteProject(data._id);
-    window.location = `/projects/account/${owner.account}`;
-  };
-
   let statusBadge = "badge badge";
   if (data.isActivated) {
     statusBadge += "-success";
@@ -128,22 +122,61 @@ const OwnerViewSchoolProject = ({
               className={"btn btn-dark"}
               onClick={activateHandler}
             />
-            {/* <Link to="/close" className="btn btn-dark disabled">
-              Unpublish
-            </Link> */}
             <button
+              type="button"
               className="btn btn-danger"
-              onClick={() => {
-                if (
-                  window.confirm(
-                    "ARE YOU SURE YOU WANT TO DELETE THIS PROJECT!? "
-                  )
-                )
-                  deleteHandler();
-              }}
+              data-toggle="modal"
+              data-target="#exampleModal"
             >
-              Delete project
+              Delete Project
             </button>
+            <div>
+              <div
+                className="modal fade"
+                id="exampleModal"
+                tabIndex="-1"
+                role="dialog"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div className="modal-dialog" role="document">
+                  <div className="modal-content">
+                    <div className="modal-header">
+                      <h5 className="modal-title" id="exampleModalLabel">
+                        Delete Project
+                      </h5>
+                      <button
+                        type="button"
+                        className="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div className="modal-body">
+                      Please, confirm you wish to delete this project.
+                    </div>
+                    <div className="modal-footer">
+                      <button
+                        type="button"
+                        className="btn btn-secondary"
+                        data-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button
+                        type="button"
+                        className="btn btn-danger"
+                        onClick={deleteHandler}
+                      >
+                        Delete Project
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

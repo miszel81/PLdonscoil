@@ -1,12 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { deleteProject } from "../../../services/projectService";
 import { Helmet } from "react-helmet";
 import CustomButton from "../CustomButton";
 
 const OwnerViewSponsorProject = ({
   data,
-  props,
   owner,
   projectId,
   campaign,
@@ -14,13 +12,6 @@ const OwnerViewSponsorProject = ({
   activateHandler,
   activateRenderHandler
 }) => {
-  deleteHandler = () => {
-    deleteProject(data._id);
-    console.log("datat.account: ", data.account);
-    props.history.push(`/projects/account/${data.account._id}`);
-    // window.location = `/projects/account/${data.account}`;
-  };
-
   let statusBadge = "badge badge";
   if (data.isActivated) {
     statusBadge += "-success";
@@ -128,9 +119,7 @@ const OwnerViewSponsorProject = ({
             <CustomButton
               value={activateRenderHandler()}
               className={"btn btn-dark"}
-              onClick={() => {
-                activateHandler();
-              }}
+              onClick={activateHandler}
             />
             <button
               type="button"
@@ -178,10 +167,7 @@ const OwnerViewSponsorProject = ({
                       <button
                         type="button"
                         className="btn btn-danger"
-                        onClick={() => {
-                          deleteHandler();
-                          // window.location = `/account/users/${this.props.user.account}`;
-                        }}
+                        onClick={deleteHandler}
                       >
                         Delete Project
                       </button>
@@ -190,19 +176,6 @@ const OwnerViewSponsorProject = ({
                 </div>
               </div>
             </div>
-            {/* <button
-              className="btn btn-danger"
-              onClick={() => {
-                if (
-                  window.confirm(
-                    "ARE YOU SURE YOU WANT TO DELETE THIS PROJECT!? "
-                  )
-                )
-                  deleteHandler();
-              }}
-            >
-              Delete project
-            </button> */}
           </div>
         </div>
       </div>
