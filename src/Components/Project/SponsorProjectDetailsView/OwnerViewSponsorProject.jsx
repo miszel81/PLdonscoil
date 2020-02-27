@@ -6,6 +6,7 @@ import CustomButton from "../CustomButton";
 
 const OwnerViewSponsorProject = ({
   data,
+  props,
   owner,
   projectId,
   campaign,
@@ -15,7 +16,9 @@ const OwnerViewSponsorProject = ({
 }) => {
   deleteHandler = () => {
     deleteProject(data._id);
-    window.location = `/projects/account/${data.account}`;
+    console.log("datat.account: ", data.account);
+    props.history.push(`/projects/account/${data.account._id}`);
+    // window.location = `/projects/account/${data.account}`;
   };
 
   let statusBadge = "badge badge";
@@ -129,7 +132,66 @@ const OwnerViewSponsorProject = ({
                 activateHandler();
               }}
             />
-            <button
+            <div>
+              <button
+                type="button"
+                className="btn btn-outline-danger mt-3"
+                data-toggle="modal"
+                data-target="#exampleModal"
+              >
+                Delete Project
+              </button>
+
+              <div
+                className="modal fade"
+                id="exampleModal"
+                tabIndex="-1"
+                role="dialog"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div className="modal-dialog" role="document">
+                  <div className="modal-content">
+                    <div className="modal-header">
+                      <h5 className="modal-title" id="exampleModalLabel">
+                        Delete Project
+                      </h5>
+                      <button
+                        type="button"
+                        className="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div className="modal-body">
+                      Please, confirm you wish to delete this project.
+                    </div>
+                    <div className="modal-footer">
+                      <button
+                        type="button"
+                        className="btn btn-secondary"
+                        data-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button
+                        type="button"
+                        className="btn btn-danger"
+                        onClick={() => {
+                          deleteHandler();
+                          // window.location = `/account/users/${this.props.user.account}`;
+                        }}
+                      >
+                        Delete Project
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* <button
               className="btn btn-danger"
               onClick={() => {
                 if (
@@ -141,7 +203,7 @@ const OwnerViewSponsorProject = ({
               }}
             >
               Delete project
-            </button>
+            </button> */}
           </div>
         </div>
       </div>
