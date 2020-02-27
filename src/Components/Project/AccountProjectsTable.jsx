@@ -6,7 +6,10 @@ import { Link } from "react-router-dom";
 import { paginate } from "../../utils/paginate";
 import Pagination from "../Common/Pagination";
 import _ from "lodash";
-import { getAccountProjects } from "../../services/projectService";
+import {
+  getAccountProjects,
+  getAccountProjectsForOwners
+} from "../../services/projectService";
 
 class AccountProjectsTable extends Component {
   state = {
@@ -53,8 +56,15 @@ class AccountProjectsTable extends Component {
   };
 
   async componentDidMount() {
-    const { data: projects } = await getAccountProjects(this.props.accountId);
-    this.setState({ projects, loading: false });
+    if (this.props.user.account === this.props.accountId) {
+      let { data: projects } = await getAccountProjectsForOwners(
+        this.props.accountId
+      );
+      this.setState({ projects, loading: false });
+    } else {
+      let { data: projects } = await getAccountProjects(this.props.accountId);
+      this.setState({ projects, loading: false });
+    }
   }
 
   handleSort = sortColumn => {

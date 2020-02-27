@@ -20,10 +20,10 @@ class DashboardAdminSponsor extends Component {
             ) : null}
             {/* <img src={tznLogo} alt="logo" /> */}
             {/* <h1>{account.accountName} Dashboard</h1> */}
-            <h2 className="mt-3">
-              Hello {user.firstName}! Thanks a million for all the great
-              support!
-            </h2>
+            <h2 className="mt-3">Hello {user.firstName}!</h2>
+            <h5 className="mb-3" style={{ color: "#333", fontSize: "1rem" }}>
+              Thanks a million for all the great support!
+            </h5>
           </div>
         </div>
 

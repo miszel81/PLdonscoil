@@ -17,7 +17,11 @@ class DashboardAdminSchool extends Component {
                 <img src={account.imgUrl} alt="donscoil" />
               </div>
             ) : null}
-            <h2 className="mt-3">Hello {user.firstName}! Hope you are well!</h2>
+            <h2 className="mt-3">Hello {user.firstName}!</h2>
+            <h5 className="mb-3" style={{ color: "#333", fontSize: "1rem" }}>
+              {" "}
+              Hope you are well!
+            </h5>
 
             <div className="btn-group mt-3" role="group">
               <Link

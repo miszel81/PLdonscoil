@@ -1,5 +1,10 @@
 import http from "./httpService";
-import { apiProjects, apiAccountProjects, apiHand } from "../config/endpoints";
+import {
+  apiProjects,
+  apiAccountProjects,
+  apiAccountProjectsForOwners,
+  apiHand
+} from "../config/endpoints";
 
 const apiAplication = apiProjects + "apply/";
 const apiGetAplication = apiProjects + "application/";
@@ -37,6 +42,10 @@ export function getProjectDetails(projectId) {
 }
 export function getAccountProjects(account) {
   return http.get(apiAccountProjects + account);
+}
+
+export function getAccountProjectsForOwners(account) {
+  return http.get(apiAccountProjectsForOwners + account);
 }
 export function getCountyProjets(county, projectType) {
   return http.post(apiProjects + "county/" + county, { projectType });

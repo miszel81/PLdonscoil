@@ -23,7 +23,7 @@ const AccountProjectsSet = ({ user, match }) => {
         <title>Own projects</title>
       </Helmet>
       <NavBar user={user} />
-      <AccountProjectsTable accountId={accountId} />
+      <AccountProjectsTable accountId={accountId} user={user} />
     </div>
   );
 };

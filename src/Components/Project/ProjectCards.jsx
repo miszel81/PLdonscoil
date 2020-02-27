@@ -11,7 +11,7 @@ const ProjectCards = ({ projects }) => {
     );
   return (
     <div className="container text-center">
-      <h1>Support Our projects:</h1>
+      <h1>Support our projects:</h1>
 
       <div className="row justify-content-center mt-3">
         {/* Project card template */}
