@@ -1,7 +1,7 @@
 // import "core-js/stable";
 import "react-app-polyfill/ie11";
 import "react-app-polyfill/stable";
-
+require("unorm");
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
