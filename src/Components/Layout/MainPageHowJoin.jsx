@@ -13,7 +13,7 @@ const About = () => {
     <React.Fragment>
       <div className="container howItWorks">
         <div className="howItWorks-header">
-          <p className="text-left">The world of donscoil</p>
+          <p className="text-left">How donscoil works?</p>
         </div>
         <div className="howItWorks-content">
           <div className="howItWorks-search">
@@ -57,9 +57,9 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="container howItWorks">
+      {/* <div className="container howItWorks">
         <div className="howItWorks-header">
-          <p className="text-left">Create your account</p>
+          <p className="text-left">Register account</p>
         </div>
         <div className="howItWorks-content">
           <div className="howItWorks-register">
@@ -69,7 +69,7 @@ const About = () => {
             <h3>Sponsor</h3>
             <div className="register-text">
               <p>
-                Share your values. Let kids understand your mission. Help them
+                Share your values. Let kids understand your business. Help them
                 learn. Make a difference!
               </p>
               <Link
@@ -101,7 +101,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </React.Fragment>
   );
 };
