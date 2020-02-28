@@ -70,8 +70,8 @@ class ModifyProject extends Form {
       data.name = project.data.name;
       data.reach = project.data.reach;
       data.imgUrl = project.data.imgUrl;
-      // data.deadline = new Date(project.data.deadline);
-      data.deadline = project.data.deadline.substring(0, 10);
+      data.deadline = new Date(project.data.deadline);
+      // data.deadline = project.data.deadline.substring(0, 10);
       data.donateButton = project.data.donateButton;
       data.otherSupportButton = project.data.otherSupportButton;
       data.teaser = project.data.teaser;
@@ -246,8 +246,8 @@ class ModifyProject extends Form {
 
             <div className="form-row">
               <div className="form-group col-md-4 data-input">
-                {this.renderInput("deadline", "When? ", "date")}
-                {/* {this.renderDate("deadline", "When?")} */}
+                {/* {this.renderInput("deadline", "When? ", "date")} */}
+                {this.renderDate("deadline", "When?")}
               </div>
             </div>
 

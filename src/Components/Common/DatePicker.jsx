@@ -8,6 +8,8 @@ const Datepicker = ({ selected, onChange, error, name, label }) => {
       <label htmlFor={name}>{label}</label>
       <div />
       <DatePicker
+        dateFormat="dd/MM/yyyy"
+        minDate={new Date()}
         selected={selected}
         onChange={onChange}
         className="form-control dp"

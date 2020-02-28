@@ -213,8 +213,8 @@ class NewProject extends Form {
 
             <div className="form-row">
               <div className="data form-group col-md-4 data-input">
-                {this.renderInput("deadline", "When? ", "date")}
-                {/* {this.renderDate("deadline", "Project date or deadline")} */}
+                {/* {this.renderInput("deadline", "When? ", "date")} */}
+                {this.renderDate("deadline", "When?")}
               </div>
             </div>
             <div className="form-row">
