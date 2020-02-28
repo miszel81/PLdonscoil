@@ -260,69 +260,142 @@ class ProjectDetails extends Component {
   }
 
   //toasts
-  notifyA = () => toast("You have applied! ", { containerId: "A" });
+  notifyA = () =>
+    toast(
+      "You have applied! ",
+      {
+        className: css({
+          borderStyle: "none",
+          borderRadius: "5px"
+        }),
+        bodyClassName: css({
+          fontSize: "1.5rem",
+          fontFamily: "Open Sans Condensed",
+          padding: "1rem"
+        }),
+        hideProgressBar: true
+      },
+      { containerId: "A" }
+    );
+  // notifyB = () =>
+  //   toast("Added to watchlist!", {
+  //     className: css({
+  //       background: "#333",
+  //       borderRadius: "25px",
+  //       width: "80%"
+  //     }),
+  //     bodyClassName: css({
+  //       fontSize: "2rem",
+  //       fontFamily: "Open Sans Condensed",
+  //       padding: "1rem"
+  //     }),
+  //     progressClassName: css({
+  //       background:
+  //         "repeating-radial-gradient(circle at center, black 0, white, grey 30px)"
+  //     })
+  //   });
   notifyB = () =>
-    toast("Added to watchlist!", {
-      className: css({
-        background: "#333",
-        borderRadius: "25px",
-        width: "80%"
-      }),
-      bodyClassName: css({
-        fontSize: "2rem",
-        fontFamily: "Open Sans Condensed",
-        padding: "1rem"
-      }),
-      progressClassName: css({
-        background:
-          "repeating-radial-gradient(circle at center, black 0, white, grey 30px)"
-      })
-    });
-  // notifyB = () => toast("Added to your watchlist! ", { containerId: "B" });
+    toast(
+      "Added to your watchlist! ",
+      {
+        className: css({
+          borderStyle: "none",
+          borderRadius: "5px"
+        }),
+        bodyClassName: css({
+          fontSize: "1.5rem",
+          fontFamily: "Open Sans Condensed",
+          padding: "1rem"
+        }),
+        hideProgressBar: true
+      },
+      { containerId: "B" }
+    );
   notifyC = () =>
-    toast("Please log in! or register your School", { containerId: "C" });
+    toast(
+      "Please log in! or register your School",
+      {
+        className: css({
+          borderStyle: "none",
+          borderRadius: "5px"
+        }),
+        bodyClassName: css({
+          fontSize: "1.5rem",
+          fontFamily: "Open Sans Condensed",
+          padding: "1rem"
+        }),
+        hideProgressBar: true
+      },
+      { containerId: "C" }
+    );
   notifyD = () =>
-    toast("You have resigned from this project!", { containerId: "D" });
+    toast(
+      "You have resigned from this project!",
+      {
+        className: css({
+          borderStyle: "none",
+          borderRadius: "5px"
+        }),
+        bodyClassName: css({
+          fontSize: "1.5rem",
+          fontFamily: "Open Sans Condensed",
+          padding: "1rem"
+        }),
+        hideProgressBar: true
+      },
+      { containerId: "D" }
+    );
   notifyE = () =>
-    toast("Removed from watchlist!", {
-      className: css({
-        background: "#333",
-        borderRadius: "25px"
-      }),
-      bodyClassName: css({
-        fontSize: "2rem",
-        fontFamily: "Open Sans Condensed",
-        padding: "1rem"
-      }),
-      progressClassName: css({
-        background:
-          "repeating-radial-gradient(circle at center, black 0, white, grey 30px)"
-      })
-    });
-  // notifyE = () => toast("Removed from your watchlist! ", { containerId: "E" });
-  // notifyF = () =>
-  //   toast(
-  //     "Thank you for you interest. We have sent your contact details to project owner. School will get back to you shortly ",
-  //     { containerId: "F" }
-  //   );
+    toast(
+      "Removed from your watchlist! ",
+      {
+        className: css({
+          borderStyle: "none",
+          borderRadius: "5px"
+        }),
+        bodyClassName: css({
+          fontSize: "1.5rem",
+          fontFamily: "Open Sans Condensed",
+          padding: "1rem"
+        }),
+        hideProgressBar: true
+      },
+      { containerId: "E" }
+    );
   notifyF = () =>
-    toast("Your contact details has been sent!", {
-      className: css({
-        background: "#333",
-        borderRadius: "25px"
-      }),
-      bodyClassName: css({
-        fontSize: "2rem",
-        fontFamily: "Open Sans Condensed",
-        padding: "1rem"
-      }),
-      progressClassName: css({
-        background:
-          "repeating-radial-gradient(circle at center, black 0, white, grey 30px)"
-      })
-    });
+    toast(
+      "Your contact details has been sent!",
+      {
+        className: css({
+          borderStyle: "none",
+          borderRadius: "5px"
+        }),
+        bodyClassName: css({
+          fontSize: "1.5rem",
+          fontFamily: "Open Sans Condensed",
+          padding: "1rem"
+        }),
+        hideProgressBar: true
+      },
+      { containerId: "F" }
+    );
   notifyG = () =>
-    toast("Removed from supported projects! ", { containerId: "G" });
+    toast(
+      "Removed from supported projects! ",
+      {
+        className: css({
+          borderStyle: "none",
+          borderRadius: "5px"
+        }),
+        bodyClassName: css({
+          fontSize: "1.5rem",
+          fontFamily: "Open Sans Condensed",
+          padding: "1rem"
+        }),
+        hideProgressBar: true
+      },
+      { containerId: "G" }
+    );
 
   componentDidMount() {
     this.populateState();
@@ -426,5 +499,5 @@ class ProjectDetails extends Component {
     );
   }
 }
-// }
+
 export default ProjectDetails;
