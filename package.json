@@ -34,7 +34,8 @@
     "react-scrolllock": "^5.0.1",
     "react-share": "^3.0.1",
     "react-toastify": "^5.5.0",
-    "recaptcha-v3": "^1.7.2"
+    "recaptcha-v3": "^1.7.2",
+    "unorm": "^1.6.0"
   },
   "scripts": {
     "start": "react-scripts start",
