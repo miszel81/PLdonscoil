@@ -297,6 +297,7 @@ class NewProject extends Form {
                   id="listOfCounties"
                   onChange={this.handleCountyMultiSelect}
                 >
+                  <option selected></option>
                   {listOfCounties.map(county => (
                     <option key={county} value={county}>
                       {county}
@@ -306,7 +307,9 @@ class NewProject extends Form {
               </div>
             </div>
             <div className="col-md-12">
-              <p className="selectedCounties">Selected counties:</p>
+              <p className="selectedCounties">
+                Selected (*click name to remove):
+              </p>
               {this.state.data.reach.map(county => (
                 <span
                   key={county}

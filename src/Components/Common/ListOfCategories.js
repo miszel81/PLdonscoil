@@ -3,6 +3,7 @@ const listOfCategories = [
   "Culture",
   "Education",
   "Environment",
+  "Fun",
   "Infrasturcture",
   "Science",
   "Self-development",
