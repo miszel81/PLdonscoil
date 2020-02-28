@@ -13,50 +13,91 @@ const About = () => {
     <React.Fragment>
       <div className="container howItWorks">
         <div className="howItWorks-header">
-          <p className="text-left">How donscoil works?</p>
+          <p className="text-left">The world of donscoil</p>
         </div>
         <div className="howItWorks-content">
           <div className="howItWorks-search">
             <div className="icon">
               <i className="fas fa-search fa-5x"></i>
             </div>
-            <h3>Search</h3>
+            <p>Find</p>
             <div className="search-text">
               <p>
-                Start with a search. Check out the projects both from {""}
+                Explore inspiring projects from {""}
+                local <Link to="/forsupporters"> schools</Link> or apply for
+                school programs offered by our {""}
                 <Link to="/forschools">sponsors </Link>
-                and <Link to="/forsupporters"> schools </Link> across Ireland to
-                find funding or inspiration.
+              </p>
+            </div>
+          </div>
+          <div className="howItWorks-create exposed">
+            <div className="icon">
+              <i className="green fas fa-paint-brush fa-5x"></i>
+            </div>
+            <p>Create</p>
+            <div className="create-text">
+              <p>
+                {" "}
+                Promote your own ideas and campaigns. Do it today! It all starts
+                with letting people know about it.
               </p>
             </div>
           </div>
           <div className="howItWorks-register">
             <div className="icon">
-              <i className="fas fa-user-plus fa-5x"></i>
+              <i className="far fa-smile-beam fa-5x"></i>
             </div>
-            <h3>Register</h3>
+            <p>Support</p>
             <div className="register-text">
               <p>
-                Use our 60 day free trial account. Create your identity as a{" "}
-                <Link to="/register/school"> school </Link>
-                or <Link to="/register/sponsor"> sponsor </Link>
-                and explore the world of donscoil. Apply for projects from
-                sponsors or promote your own campaigns.
+                Help kids learn and develop their skills. Support their effort
+                and make them feel important.
               </p>
             </div>
           </div>
-          <div className="howItWorks-create">
+        </div>
+      </div>
+      <div className="container howItWorks">
+        <div className="howItWorks-header">
+          <p className="text-left">Create your account</p>
+        </div>
+        <div className="howItWorks-content">
+          <div className="howItWorks-register">
             <div className="icon">
-              <i className="fas fa-paint-brush fa-5x"></i>
+              <i className="fas fa-rocket fa-5x"></i>
             </div>
-            <h3>Create</h3>
-            <div className="create-text">
+            <h3>Sponsor</h3>
+            <div className="register-text">
               <p>
-                {" "}
-                Transform your needs into projects. Doesn't matter if you need a
-                couple of books or a new computer lab. It all starts with
-                letting people know about it.
+                Share your values. Let kids understand your mission. Help them
+                learn. Make a difference!
               </p>
+              <Link
+                to="/register/sponsor"
+                className="btn btn-outline-secondary mb-5"
+              >
+                {" "}
+                Register
+              </Link>
+            </div>
+          </div>
+          <div className="howItWorks-register">
+            <div className="icon">
+              <i className="fas fa-graduation-cap fa-5x"></i>
+            </div>
+            <h3>School</h3>
+            <div className="register-text">
+              <p>
+                Find funding opportunities. Apply for projects from sponsors.
+                Promote school initiatives.
+              </p>
+              <Link
+                to="/register/school"
+                className="btn btn-outline-secondary mb-5"
+              >
+                {" "}
+                Register
+              </Link>
             </div>
           </div>
         </div>
