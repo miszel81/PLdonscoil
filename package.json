@@ -10,6 +10,7 @@
     "@sentry/browser": "^5.11.2",
     "axios": "^0.19.2",
     "bootstrap": "^4.4.1",
+    "core-js": "^3.6.4",
     "crypto-js": "^4.0.0",
     "dotenv": "^8.2.0",
     "firebase": "^7.8.0",
@@ -22,6 +23,7 @@
     "popper.js": "^1.16.1",
     "raven-js": "^3.27.2",
     "react": "^16.12.0",
+    "react-app-polyfill": "^1.0.6",
     "react-datepicker": "^2.11.0",
     "react-dom": "^16.12.0",
     "react-ga": "^2.7.0",
@@ -32,7 +34,8 @@
     "react-scrolllock": "^5.0.1",
     "react-share": "^3.0.1",
     "react-toastify": "^5.5.0",
-    "recaptcha-v3": "^1.7.2"
+    "recaptcha-v3": "^1.7.2",
+    "unorm": "^1.6.0"
   },
   "scripts": {
     "start": "react-scripts start",
