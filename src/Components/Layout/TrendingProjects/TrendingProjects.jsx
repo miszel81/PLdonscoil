@@ -25,7 +25,7 @@ class TrendingProjects extends Component {
       <div className="container jumbotronWhite">
         {/* CHECK WHAT TYPE OF TRENDING PROJECTS ARE REQUIRED SCHOOL OR SPONSOR*/}
         <h3 className="mt-5 h-text-fontMainTrending mb-3 trendingHeaderMobile">
-          Trending now:
+          Whats popular now
         </h3>
         <div className="row justify-content-center mt-5">
           {this.state.projects.map(project => (

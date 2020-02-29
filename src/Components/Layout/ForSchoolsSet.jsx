@@ -22,7 +22,7 @@ const ForSchoolsSet = props => {
         <div className="jumbotron jumbotronWhite">
           <div className="container mb-5">
             <h1 className="h-text-fontMainTitle text-center mb-3 mt-3">
-              Apply for inspiring projects, initiatives <br />
+              Apply for fantastic projects, initiatives <br />
               and funding.
             </h1>
           </div>
@@ -32,7 +32,7 @@ const ForSchoolsSet = props => {
             <div className="u-maxWIdth1000 u-marginAuto u-paddingBottom60 u-relative mt-3">
               <div className="h-text-font h-text-backround u-padding60 u-paddingBottom100 u-foreground  shadow u-borderBox ">
                 <h1 className="h-text-fontMain">
-                  See what's on in your County
+                  See what project availibilities are we offering in your area.
                 </h1>
                 <SponsorSearchBox props={props} />
               </div>
@@ -57,7 +57,7 @@ const ForSchoolsSet = props => {
               <div className="u-maxWIdth1000 u-marginAuto u-paddingTop60 u-paddingBottom60 u-relative">
                 <div className="h-text-font h-text-backround u-rightn40 u-padding60 u-paddingBottom100 u-foreground u-width60pct shadow u-borderBox u-marginTop8">
                   <h1 className="h-text-fontMain">
-                    Join us and promote your own ideas.
+                    Join us and promote your own ideas and programs.
                   </h1>
                   <Link to="/register/school" className="btn btn-primary">
                     Register school

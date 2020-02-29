@@ -465,7 +465,7 @@ class CreateAccount extends Form {
                       <div className="form-group col-md-5">
                         {this.renderInput(
                           "accountName",
-                          "Name of the School*",
+                          "Name of School*",
                           "text",
                           "Scoil Bhride"
                         )}

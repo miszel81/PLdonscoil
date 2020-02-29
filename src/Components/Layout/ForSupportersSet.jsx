@@ -22,7 +22,7 @@ const ForSupportersSet = props => {
           <div className="container mb-5">
             <h1 className="h-text-fontMainTitle text-center mb-3 mt-3">
               Help kids develop their skills and <br />
-              self-confidence.
+              become self-confident.
             </h1>
           </div>
 
@@ -31,7 +31,7 @@ const ForSupportersSet = props => {
             <div className="u-maxWIdth1000 u-marginAuto u-paddingBottom60 u-relative mt-3">
               <div className="h-text-font h-text-backround u-padding60 u-paddingBottom100 u-foreground  shadow u-borderBox ">
                 <h1 className="h-text-fontMain">
-                  See school initiatives in your County
+                  See where you can offer help in your area
                 </h1>
                 <SchoolSearchBox props={props} />
               </div>
@@ -56,7 +56,7 @@ const ForSupportersSet = props => {
               <div className="u-maxWIdth1000 u-marginAuto u-paddingTop60 u-paddingBottom60 u-relative">
                 <div className="h-text-font h-text-backround u-rightn40 u-padding60 u-paddingBottom100 u-foreground u-width60pct shadow u-borderBox u-marginTop8">
                   <h1 className="h-text-fontMain">
-                    Join us and promote your own initiatives and programs.
+                    Join us and promote your own ideas and programs.
                   </h1>
                   <Link to="/register/sponsor" className="btn btn-info">
                     Register sponsor
