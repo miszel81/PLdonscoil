@@ -23,9 +23,13 @@
   width: 250px;
 }
 
-.howItWorks-search:hover {
+.exposed {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+/* .howItWorks-search:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} */
 
 .howItWorks-register {
   width: 250px;
@@ -34,9 +38,9 @@
   width: 250px;
 }
 
-.howItWorks-register:hover {
+/* .howItWorks-register:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+} */
 .howItWorks-create:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
