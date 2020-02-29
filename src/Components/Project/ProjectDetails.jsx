@@ -102,9 +102,10 @@ class ProjectDetails extends Component {
   async deleteHandler() {
     const response = await deleteProject(this.props.projectId);
     if (response.status === 201) {
-      this.props.props.history.push(
-        `/projects/account/${this.state.data.account._id}`
-      );
+      window.location = `/projects/account/${this.state.data.account._id}`;
+      // this.props.props.history.push(
+      //   `/projects/account/${this.state.data.account._id}`
+      // );
     } else {
       return;
       //DO ZMIANY NA ERROR
