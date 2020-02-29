@@ -297,7 +297,7 @@ class NewProject extends Form {
                   id="listOfCounties"
                   onChange={this.handleCountyMultiSelect}
                 >
-                  <option selected></option>
+                  {/* <option selected></option> */}
                   {listOfCounties.map(county => (
                     <option key={county} value={county}>
                       {county}
