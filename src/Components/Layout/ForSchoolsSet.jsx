@@ -23,7 +23,7 @@ const ForSchoolsSet = props => {
           <div className="container mb-5">
             <h1 className="h-text-fontMainTitle text-center mb-3 mt-3">
               Apply for fantastic projects, initiatives <br />
-              and funding.
+              and funding
             </h1>
           </div>
 

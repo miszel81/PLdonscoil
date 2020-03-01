@@ -91,7 +91,9 @@ class AccountProjectsTable extends Component {
             </div>
           ) : this.state.projects.length === 0 ? (
             <div>
-              <h1>Sorry, you have no projects at the moment.</h1>
+              <h5 className="mb-3" style={{ color: "#333", fontSize: "1rem" }}>
+                You have no projects.
+              </h5>
               <Link to="/projects/new/create" className="btn btn-info">
                 Create new project
               </Link>
