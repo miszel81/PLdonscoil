@@ -36,10 +36,8 @@ const About = props => {
                       </h1>
                       <p className="h-text-font">
                         The internet should connect people and ideas. That’s why
-                        we’ve created a platform where schools and
-                        philanthropist can come together. A place where public
-                        interest can profit from corporate social responsibility
-                        of our business leaders.
+                        we’ve created a platform where schools and businesses
+                        can come together.
                       </p>
                     </div>
                   </div>
@@ -50,7 +48,7 @@ const About = props => {
                   <div className="u-maxWIdth1000 u-marginAuto u-paddingTop60 u-paddingBottom60 u-relative">
                     <div className="h-text-font h-text-backround u-rightn40 u-padding60 u-paddingBottom100 u-foreground u-width60pct u-borderBox u-marginTop8">
                       <h1 className="h-text-fontMain">
-                        Why you should get involved?
+                        Why should you get involved?
                       </h1>
                       <p className="h-text-font">
                         We are aware that your school or enterprise needs to
@@ -69,15 +67,16 @@ const About = props => {
                   <div className="u-maxWIdth1000 u-marginAuto u-paddingTop60 u-paddingBottom60 u-relative">
                     <div className="h-text-font h-text-backround u-padding60 u-paddingBottom100 u-foreground u-width60pct u-borderBox u-marginTop8">
                       <h1 className="h-text-fontMain">
-                        Elevating educational experience
+                        Improving educational experience
                       </h1>
                       <p className="h-text-font">
-                        We know how hard it is to keep students' focus. Modern
-                        school needs up to date equipment, materials and
-                        activities. It doesn’t matter whether you need computer
-                        lab, educational materials or just want to organise a
-                        trip to science musem. Donscoil will let you promote
-                        your project and facilitate the process of fundraising.
+                        We know how hard it is to keep students focused. Modern
+                        schools needs up to date equipment, materials and
+                        activities. It doesn’t matter whether you need a
+                        computer lab, educational materials or just want to
+                        organise a trip to a science museum. Donscoil will let
+                        you promote your project and facilitate the process of
+                        fundraising.
                       </p>
                     </div>
                   </div>
@@ -92,10 +91,8 @@ const About = props => {
                       </h1>
                       <p className="h-text-font">
                         Promote and drive the growth of your company by
-                        supporting the development of our children. Boost your
-                        customers and employees engagement by showing your
-                        social accountability. Invest in publicity instead of
-                        advertising.
+                        supporting the development of our children. Invest in
+                        publicity instead of advertising.
                       </p>
                     </div>
                   </div>

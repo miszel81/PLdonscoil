@@ -82,7 +82,7 @@ div#exampleModal {
 .homepage-background {
   position: relative;
 
-  background-image: url("../Layout/img/homePageBackground1.jpg");
+  background-image: url("../Layout/img/homePageBackground1c.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -102,7 +102,7 @@ div#exampleModal {
 .schools-background {
   /* position: relative; */
   /* background-image: linear-gradient(#333, #fff); */
-  background-image: url("../Layout/img/sch.jpeg");
+  background-image: url("../Layout/img/sch_1c.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 65vh;
@@ -110,7 +110,7 @@ div#exampleModal {
 }
 
 .contact-background {
-  background-image: url("../Layout/img/office.jpg");
+  background-image: url("../Layout/img/office_1c.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 65vh;
@@ -120,7 +120,7 @@ div#exampleModal {
 .supporters-background {
   /* position: relative; */
   /* background-image: linear-gradient(#333, #fff); */
-  background-image: url("../Layout/img/forSponsors1.jpg");
+  background-image: url("../Layout/img/forSponsors1a.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 65vh;
@@ -541,7 +541,7 @@ textarea {
   .homepage-background {
     position: relative;
 
-    background-image: url("../Layout/img/homePageBackground1.jpg");
+    background-image: url("../Layout/img/homePageBackground1c.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 60%;

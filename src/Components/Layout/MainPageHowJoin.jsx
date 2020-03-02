@@ -23,7 +23,7 @@ const About = () => {
             <p>Find</p>
             <div className="search-text">
               <p>
-                Explore inspiring projects from {""}
+                Explore fantastic projects from {""}
                 local <Link to="/forsupporters"> schools</Link> or apply for
                 school programs offered by our {""}
                 <Link to="/forschools">sponsors </Link>
