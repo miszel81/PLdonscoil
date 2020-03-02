@@ -42,11 +42,11 @@ class CountyProjectsTable extends Component {
         <Link to={`/projects/${project._id}`}>{project.name}</Link>
       )
     },
-    { path: "account.city", label: "Location" },
-    { path: "account.accountName", label: "Institution" },
+    { path: "account.city", label: "Where" },
+    { path: "account.accountName", label: "Who" },
     {
       path: "deadline",
-      label: "Date/deadline"
+      label: "When"
     }
   ];
 

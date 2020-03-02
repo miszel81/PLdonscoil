@@ -17,8 +17,10 @@ class TrendingProjects extends Component {
     } catch (error) {}
 
     // REQUEST PROJECT OF THE ABOVE PROJECT TYPE
-    const { data: projects } = await getTrendingProjects(projectType);
-    this.setState({ projects, projectType });
+    try {
+      const { data: projects } = await getTrendingProjects(projectType);
+      this.setState({ projects, projectType });
+    } catch (error) {}
   }
   render() {
     return (

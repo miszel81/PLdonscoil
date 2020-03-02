@@ -26,20 +26,21 @@ class ProjectsTable extends Component {
         <Link to={`/projects/${project._id}`}>{project.name}</Link>
       )
     },
+    { path: "city", label: "Where" },
     {
       path: "account.accountName",
-      label: "Institution",
+      label: "Who",
       content: project => (
         <Link to={`/account/${project.account._id}`}>
           {project.account.accountName}
         </Link>
       )
     },
+
     {
       path: "deadline",
-      label: "Deadline"
+      label: "When"
     }
-    // { path: "reach", label: "Reach" }
   ];
 
   async componentDidMount() {
