@@ -122,7 +122,7 @@ class EditAccount extends Form {
     if (user.type === "Sponsor") {
       // USER IS SPONSOR - NO BANK ACCOUNT
       return (
-        <div className="container">
+        <div className="">
           <div className="jumbotron full-page">
             <Helmet>
               <title>Edit account</title>
@@ -231,7 +231,7 @@ class EditAccount extends Form {
     } else {
       // USER IS SCHOOL - BANK ACCOUNT INCLUDED
       return (
-        <div className="container">
+        <div className="">
           <div className="jumbotron">
             <h3 className="header-form mb-3">Edit Account</h3>
             <div className="image-edit-top">

@@ -101,7 +101,7 @@ class NewUser extends Form {
           <title>Create new user</title>
         </Helmet>
         <div className="row">
-          <div className="col-md-6 offset-md-3">
+          <div className="col-md-6">
             <form onSubmit={this.handleSubmit}>
               <h2 className="header-form">Create new user</h2>
               <div className="form-row mt-6">
@@ -137,7 +137,7 @@ class NewUser extends Form {
               </div>
 
               <div className="form-row">
-                <div className="form-group col-md-6">
+                <div className="form-group col-md-8">
                   {this.renderInput(
                     "email",
                     "Email/Login*",
@@ -145,7 +145,7 @@ class NewUser extends Form {
                     "Ciara@school.com"
                   )}
                 </div>
-                <div className="form-group col-md-6">
+                <div className="form-group col-md-8">
                   {this.renderInput(
                     "password",
                     "Password (Password Manager recommended)*",

@@ -114,7 +114,7 @@ class EditUser extends Form {
       return <Redirect to="/login" />;
     }
     return (
-      <div className="container">
+      <div className="">
         <div className="jumbotron full-page">
           <div className="row">
             <div className="col-md-12 ">
@@ -129,7 +129,7 @@ class EditUser extends Form {
                       "Ciara"
                     )}
                   </div>
-                  <div className="form-group col-md-6">
+                  <div className="form-group col-md-4">
                     {this.renderInput(
                       "lastName",
                       "Last Name",

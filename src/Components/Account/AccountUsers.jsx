@@ -54,7 +54,7 @@ class AccountUsers extends Component {
     const sorted = _.orderBy(users, [sortColumn.path], [sortColumn.order]);
 
     return (
-      <div className="container full-page">
+      <div className="full-page">
         <Helmet>
           <title>Admin panel</title>
         </Helmet>
