@@ -373,8 +373,8 @@
 
 @media all and (max-width: 600px) {
   .container-fluid {
-    padding-left: 8px !important;
-    padding-right: 8px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
   }
   .forschools-background-image {
     display: none;
