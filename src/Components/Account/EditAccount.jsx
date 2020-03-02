@@ -185,7 +185,7 @@ class EditAccount extends Form {
               <div className="col-md-12 mt-3">
                 <form onSubmit={this.handleSubmit}>
                   <div className="form-row mt-6">
-                    <div className="form-group col-md-12">
+                    <div className="form-group col-md-6">
                       {this.renderInput("accountName", "Account Name", "text")}
                     </div>
                     <div className="form-group col-md-4">
