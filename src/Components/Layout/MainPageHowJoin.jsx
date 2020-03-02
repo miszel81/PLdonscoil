@@ -44,7 +44,7 @@ const About = () => {
             </div>
           </div>
           <div className="howItWorks-register">
-            <div className="icon">
+            <div className="icon-support">
               <i className="far fa-smile-beam fa-5x"></i>
             </div>
             <p>Support</p>

@@ -36,19 +36,19 @@ class AccountProjectsTable extends Component {
       path: "Status",
       label: "Status",
       content: project => (project.isActivated ? "Active" : "Inactive")
-    },
-    {
-      key: "Action",
-      label: "Action",
-      content: project => (
-        <Link
-          to={`/projects/${project._id}`}
-          className="btn btn-outline-secondary btn-sm"
-        >
-          info
-        </Link>
-      )
     }
+    // {
+    //   key: "Action",
+    //   label: "Action",
+    //   content: project => (
+    //     <Link
+    //       to={`/projects/${project._id}`}
+    //       className="btn btn-outline-secondary btn-sm"
+    //     >
+    //       info
+    //     </Link>
+    //   )
+    // }
   ];
 
   handlePageChange = page => {

@@ -31,18 +31,21 @@ const AnonymousViewSchoolProject = ({ data, owner }) => {
           <div className="project-details-share mt-3">
             <FacebookShareButton
               url={`https://www.donscoil.ie/projects/${data._id}`}
+              imageUrl={data.imageUrl}
               quote={`Project: ${data.name}`}
             >
               <i className="fab fa-facebook-square fa-2x"></i>
             </FacebookShareButton>
             <TwitterShareButton
               url={`https://www.donscoil.ie/projects/${data._id}`}
+              imageUrl={data.imageUrl}
               quote={`Project: ${data.name}`}
             >
               <i className="fab fa-twitter-square fa-2x"></i>
             </TwitterShareButton>
             <WhatsappShareButton
               url={`https://www.donscoil.ie/projects/${data._id}`}
+              imageUrl={data.imageUrl}
               quote={`Project: ${data.name}`}
             >
               <i className="fab fa-whatsapp-square fa-2x"></i>
