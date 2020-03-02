@@ -9,6 +9,7 @@ import {
   getCampaignSupportes
 } from "../../services/campaignService";
 import { Helmet } from "react-helmet";
+import { css } from "glamor";
 // import CustomButton from "../Project/CustomButton";
 
 class SupportInent extends Component {
@@ -70,7 +71,18 @@ class SupportInent extends Component {
   notifyF = () =>
     toast(
       "Thank you for you interest. We have sent your contact details to project owner. School will get back to you shortly ",
-      { containerId: "F" }
+      {
+        className: css({
+          borderStyle: "none",
+          borderRadius: "5px"
+        }),
+        bodyClassName: css({
+          fontSize: "1.5rem",
+          fontFamily: "Open Sans Condensed",
+          padding: "1rem"
+        }),
+        hideProgressBar: true
+      }
     );
 
   componentDidMount() {

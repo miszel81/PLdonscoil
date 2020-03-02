@@ -72,18 +72,15 @@ class SupportInent extends Component {
   notifyF = () =>
     toast("Your contact details has been sent!", {
       className: css({
-        background: "#333",
-        borderRadius: "25px"
+        borderStyle: "none",
+        borderRadius: "5px"
       }),
       bodyClassName: css({
-        fontSize: "2rem",
+        fontSize: "1.5rem",
         fontFamily: "Open Sans Condensed",
         padding: "1rem"
       }),
-      progressClassName: css({
-        background:
-          "repeating-radial-gradient(circle at center, black 0, white, grey 30px)"
-      })
+      hideProgressBar: true
     });
 
   componentDidMount() {
