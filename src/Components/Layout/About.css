@@ -1,10 +1,25 @@
 .jumbotron h1 {
   font-size: 2rem;
 }
+.jumbotron {
+  padding: 1rem 0.5rem !important;
+}
+.table td {
+  padding: 0.5rem !important;
+}
+
+.table th {
+  padding: 0.5rem !important;
+}
 
 .heading-text {
   font-size: 3rem;
   padding: 30px;
+}
+
+.container-fluid {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
 }
 
 .awesome {
@@ -357,6 +372,10 @@
 }
 
 @media all and (max-width: 600px) {
+  .container-fluid {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
   .forschools-background-image {
     display: none;
   }
