@@ -76,7 +76,7 @@ class AccountProjectsTable extends Component {
     const sorted = _.orderBy(projects, [sortColumn.path], [sortColumn.order]);
     const content = paginate(sorted, currentPage, pageSize);
     return (
-      <div className="container full-page">
+      <div className="full-page">
         <div className="jumbotron">
           {this.state.loading ? (
             <div className="lds-roller">

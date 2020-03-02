@@ -120,7 +120,7 @@ class NewProject extends Form {
     }
 
     return (
-      <div className="container">
+      <div className="">
         <Helmet>
           <title>Create new project</title>
         </Helmet>
