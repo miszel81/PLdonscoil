@@ -266,7 +266,7 @@ class CreateAccount extends Form {
             <title>Register sponsor</title>
           </Helmet>
           <NavBar user={user} />
-          <div className="container">
+          <div className="">
             <div className="jumbotron">
               {/* <h2>Create Sponsor Account</h2> */}
               <div className="row">
@@ -454,7 +454,7 @@ class CreateAccount extends Form {
           </Helmet>
           <NavBar user={user} />
           {/* <h2>Create School Account</h2> */}
-          <div className="container">
+          <div className="">
             {/* <h1 className="text-light">School registration form:</h1> */}
             <div className="jumbotron">
               <div className="row">

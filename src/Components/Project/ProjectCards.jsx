@@ -6,7 +6,7 @@ const ProjectCards = ({ projects }) => {
   if (projects.length === 0)
     return (
       <div className="container">
-        <h1 className="green">No projects at the moment. </h1>
+        <p className="text-center">No school projects at the moment. </p>
       </div>
     );
   return (
