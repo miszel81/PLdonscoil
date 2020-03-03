@@ -74,7 +74,7 @@ class Login extends Form {
               </div>{" "}
               <div className="cant-remember text-center">
                 <p>
-                  Can't remeber password?
+                  Can't remember password?
                   <Link to="reset-password"> Reset</Link>
                 </p>
               </div>

@@ -32,7 +32,7 @@ const ForSchoolsSet = props => {
             <div className="u-maxWIdth1000 u-marginAuto u-paddingBottom60 u-relative mt-3">
               <div className="h-text-font h-text-backround u-padding60 u-paddingBottom100 u-foreground  shadow u-borderBox ">
                 <h1 className="h-text-fontMain">
-                  See what project availibilities are we offering in your area.
+                  Check out projects in your area now.
                 </h1>
                 <SponsorSearchBox props={props} />
               </div>

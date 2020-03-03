@@ -1,6 +1,5 @@
 import React from "react";
-// import About from "./About";
-import About2 from "./About_2nd";
+import About from "./About";
 // import NavBar from "./NavBar";
 
 const MissionSet = ({ user }) => {
@@ -10,7 +9,7 @@ const MissionSet = ({ user }) => {
       {/* <NavBar user={user} /> */}
       {/* <div className="container-fluid"> */}
       <div>
-        <About2 user={user} />
+        <About user={user} />
       </div>
     </div>
   );
