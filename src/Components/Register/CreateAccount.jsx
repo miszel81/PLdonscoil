@@ -270,16 +270,16 @@ class CreateAccount extends Form {
             <div className="jumbotron">
               {/* <h2>Create Sponsor Account</h2> */}
               <div className="row">
-                <div className="col-md-8 offset-md-2">
+                <div className="col-md-10 offset-md-1">
                   <form onSubmit={this.handleSubmit}>
-                    <h2 className="header-form">About The Company</h2>
+                    <h2 className="header-form">About Company</h2>
                     <div className="form-row">
                       <div className="form-group col-md-5">
                         {this.renderInput(
                           "accountName",
-                          "Name of the Company*",
+                          "Name*",
                           "text",
-                          "Apple"
+                          "mmlab"
                         )}
                       </div>
                       <div className="form-group col-md-2">
@@ -290,7 +290,7 @@ class CreateAccount extends Form {
                           "website",
                           "Website*",
                           "text",
-                          "www.apple.ie"
+                          "www.mmlab.ie"
                         )}
                       </div>
                     </div>
@@ -306,7 +306,7 @@ class CreateAccount extends Form {
                           "street",
                           "Street*",
                           "text",
-                          "12 Mobile Street"
+                          "12 Main Street"
                         )}
                       </div>
                     </div>
@@ -458,9 +458,9 @@ class CreateAccount extends Form {
             {/* <h1 className="text-light">School registration form:</h1> */}
             <div className="jumbotron">
               <div className="row">
-                <div className="col-md-8 offset-md-2">
+                <div className="col-md-10 offset-md-1">
                   <form onSubmit={this.handleSubmit}>
-                    <h2 className="header-form">About The School</h2>
+                    <h2 className="header-form">About School</h2>
                     <div className="form-row">
                       <div className="form-group col-md-5">
                         {this.renderInput(
