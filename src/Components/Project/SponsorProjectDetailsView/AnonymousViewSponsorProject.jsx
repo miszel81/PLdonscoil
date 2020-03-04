@@ -52,9 +52,11 @@ const AnonymousViewSponsorProject = ({ props, data, owner }) => {
             </WhatsappShareButton>
           </div>
 
-          <div className="container project-details mt-5">
+          <div className="container project-details mt-5 ">
             <div className="jumbotron">
-              <p className="mobilePrjectDescription">{data.description}</p>
+              <div className="project-description-new">
+                <p>{data.description}</p>
+              </div>
               <div>
                 <p className="project-detailed-info login-or-register">
                   To apply

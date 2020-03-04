@@ -7,6 +7,11 @@ input {
   font-size: 1 rem;
 }
 
+.project-description-new p {
+  font-size: 1.5rem !important;
+  text-align: justify !important;
+}
+
 .modal-backdrop {
   z-index: -3;
 }
@@ -634,8 +639,20 @@ textarea {
     font-size: 1rem;
   }
 
+  .textfull {
+    text-align: justify !important;
+  }
+
+  .project-description-new p {
+    font-size: 1.5rem !important;
+    text-align: justify !important;
+  }
   .mobilePrjectDescription {
     font-size: 1.5rem;
+    text-align: justify !important;
+  }
+
+  .mobilePrjectDescription p {
     text-align: justify !important;
   }
 
