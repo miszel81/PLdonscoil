@@ -332,13 +332,16 @@ div#exampleModal {
   /* background-color: #fff !important; */
   min-height: 300px;
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans Condensed", sans-serif;
   font-size: 1rem !important;
 }
 
 .project-details.jumbotron p {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1rem !important;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1.5rem !important;
+  text-align: justify;
+  /* padding-left: 20px;
+  padding-right: 20px; */
 }
 
 .project-details.jumbotron button {
@@ -532,6 +535,18 @@ textarea {
 }
 
 @media only screen and (max-width: 600px) {
+  .project-details.jumbotron {
+    /* background-color: #fff !important; */
+    min-height: 300px;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem !important;
+  }
+
+  .project-details.jumbotron p {
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 1rem !important;
+  }
   .account-profile-description {
     padding: 25px;
   }
@@ -651,7 +666,7 @@ textarea {
   }
 
   .mobileAccountNumber {
-    font-size: 2rem !important;
+    font-size: 1.5rem !important;
   }
 
   .trendingHeaderMobile {
