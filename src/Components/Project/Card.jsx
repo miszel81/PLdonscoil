@@ -24,16 +24,12 @@ const Card = ({ project }) => {
             <p className="school-owner text-center green">
               {project.account.accountName}
             </p>
-
           </div>
 
           <div className="cardContentTeaser">
             <p>{project.teaser}</p>
           </div>
-
         </div>
-
-
       </div>
       <div className="cardContentButton">
         <div className="social-item">
@@ -42,7 +38,7 @@ const Card = ({ project }) => {
             quote={`#${project.name}`}
           >
             <i className="fas fa-share-alt"></i>Share
-            </FacebookShareButton>
+          </FacebookShareButton>
         </div>
         <div className="social-item">
           <i className="fas fa-info"></i>

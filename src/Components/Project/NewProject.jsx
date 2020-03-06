@@ -32,7 +32,7 @@ class NewProject extends Form {
     name: Joi.string()
       .required()
       .min(3)
-      .max(50),
+      .max(45),
     projectType: Joi.string().required(),
     description: Joi.string()
       .required()
@@ -47,7 +47,7 @@ class NewProject extends Form {
     owner: Joi.string(),
     teaser: Joi.string()
       .min(3)
-      .max(150),
+      .max(100),
     donateButton: Joi.boolean(),
     otherSupportButton: Joi.boolean(),
     imgUrl: Joi.string().allow("")
