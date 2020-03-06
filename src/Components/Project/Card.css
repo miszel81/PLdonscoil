@@ -51,6 +51,7 @@
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   padding: 10px;
+  text-align: center;
 }
 
 .cardContent a {
@@ -58,7 +59,7 @@
   color: #333;
   font-family: "Open Sans Condensed", sans-serif;
   font-size: 2rem;
-  padding: 15px;
+  /* padding: 15px; */
 }
 
 .cardContentTitle {
@@ -70,12 +71,14 @@
 .cardContentTeaser {
   padding-left: 15px;
   padding-right: 15px;
+
   /* height: 150px; */
 }
 
 .cardContentTeaser p {
   font-size: 1.2rem;
   min-height: 40px;
+  font-size: 1.2rem !important;
 }
 .cardContentButton {
   padding: 5px;
