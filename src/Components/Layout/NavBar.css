@@ -24,6 +24,8 @@
   text-decoration: none;
   cursor: pointer;
   z-index: 200;
+  line-height: 1;
+  align-self: center;
 }
 .Navbar-brand-black a {
   /* color: #169b62; */
