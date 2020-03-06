@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import TableHeader from "../Common/TableHeader";
 import TableBody from "../Common/TableBody";
 // import "../Project/CountyProjectsTable.css";
-import { getAccountWatchedProjects } from "../../services/campaignService";
+import { getUserWatchedProjects } from "../../services/campaignService";
+// import { getAccountWatchedProjects } from "../../services/campaignService";
 import _ from "lodash";
 import { Link } from "react-router-dom";
 import { paginate } from "../../utils/paginate";
@@ -42,9 +43,7 @@ class AccountWatchlistProjects extends Component {
   };
 
   async componentDidMount() {
-    const { data: projects } = await getAccountWatchedProjects(
-      this.props.accountId
-    );
+    const { data: projects } = await getUserWatchedProjects(this.props.userId);
     this.setState({ projects, loading: false });
   }
 

@@ -186,7 +186,7 @@ class ProjectDetails extends Component {
     const projectId = this.props.projectId;
     const user = this.props.loggedInUser;
     if (user) {
-      const campaign = await getCampaignObserve(projectId, user.account);
+      const campaign = await getCampaignObserve(projectId, user._id);
       if (campaign.data === this.state.disabledObserve) return;
       else {
         this.setState({ disabledObserve: true });
@@ -195,19 +195,47 @@ class ProjectDetails extends Component {
       return;
     }
   }
+  // async checkObserve() {
+  //   const projectId = this.props.projectId;
+  //   const user = this.props.loggedInUser;
+  //   if (user) {
+  //     const campaign = await getCampaignObserve(projectId, user.account);
+  //     if (campaign.data === this.state.disabledObserve) return;
+  //     else {
+  //       this.setState({ disabledObserve: true });
+  //     }
+  //   } else {
+  //     return;
+  //   }
+  // }
   observeHandler = async () => {
     const user = this.props.loggedInUser;
     const projectId = this.props.projectId;
     if (this.state.disabledObserve) {
-      await unObserveProject(projectId, user.account);
+      await unObserveProject(projectId, user._id);
       this.setState({ disabledObserve: false });
       this.notifyE();
     } else {
-      await observeProject(projectId, user.account);
+      // await observeProject(projectId, user.account);
+      await observeProject(projectId, user);
       this.setState({ disabledObserve: true });
       this.notifyB();
     }
   };
+  // observeHandler = async () => {
+  //   const user = this.props.loggedInUser;
+  //   const projectId = this.props.projectId;
+  //   if (this.state.disabledObserve) {
+  //     await unObserveProject(projectId, user.account);
+  //     this.setState({ disabledObserve: false });
+  //     this.notifyE();
+  //   } else {
+  //     // await observeProject(projectId, user.account);
+  //     await observeProject(projectId, user.account);
+  //     this.setState({ disabledObserve: true });
+  //     this.notifyB();
+  //   }
+  // };
   watchlistRenderHandler = () => {
     const user = this.props.loggedInUser;
     if (user) {

@@ -58,7 +58,10 @@ class DashboardUserSchool extends Component {
             syle={{ backgroundColor: "#f2ebb1" }}
           >
             <h3>Sponsors' projects on your watchlist:</h3>
-            <AccountWatchlistProjects accountId={user.account} />
+            <AccountWatchlistProjects
+              accountId={user.account}
+              userId={user._id}
+            />
             <Link to="/search" className="btn btn-info">
               Add new project
             </Link>
