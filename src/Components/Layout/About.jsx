@@ -11,18 +11,18 @@ const About = props => {
     // <React.Fragment>
     <div>
       <Helmet>
-        <title>About</title>
+        <title>O nas</title>
       </Helmet>
       <div className="container-fluid table-background full-page">
         <NavBar user={user} />
 
         <div className="jumbotron jumbotron-about">
           <h1 className="h-text-fontMainTitle text-center mt-5 mb-5">
-            Find.Create.Support!
+            Szukaj.Twórz.Wspieraj!
           </h1>
 
           <h3 className="text-center mb-3 mt-3">
-            Inspiring school initiatives.
+            Wspaniałe szkolne inicjatywy.
           </h3>
           <div className="about-container">
             <section className="u-relative mt-5 mb-5">
@@ -32,7 +32,7 @@ const About = props => {
                   <div className="u-maxWIdth1000 u-marginAuto u-paddingTop60 u-paddingBottom60 u-relative">
                     <div className="h-text-font h-text-backround u-padding60 u-paddingBottom100 u-foreground u-width60pct u-borderBox u-marginTop8">
                       <h1 className="h-text-fontMain">
-                        Make your ideas come true
+                        Realizuj swoje pomysły
                       </h1>
                       <p className="h-text-font">
                         The internet should connect people and ideas. That’s why
@@ -48,7 +48,7 @@ const About = props => {
                   <div className="u-maxWIdth1000 u-marginAuto u-paddingTop60 u-paddingBottom60 u-relative">
                     <div className="h-text-font h-text-backround u-rightn40 u-padding60 u-paddingBottom100 u-foreground u-width60pct u-borderBox u-marginTop8">
                       <h1 className="h-text-fontMain">
-                        Why should you get involved?
+                        Dlaczego warto się zaangażować?
                       </h1>
                       <p className="h-text-font">
                         We know that your school or enterprise needs to
@@ -86,7 +86,7 @@ const About = props => {
                   <div className="u-maxWIdth1000 u-marginAuto u-paddingTop60 u-paddingBottom60 u-relative">
                     <div className="h-text-font h-text-backround u-rightn40 u-padding60 u-paddingBottom100 u-foreground u-width60pct u-borderBox u-marginTop8">
                       <h1 className="h-text-fontMain">
-                        Support long-term thinking
+                        Wspierajmy długofalowe myślenie
                       </h1>
                       <p className="h-text-font">
                         Promote and drive the growth of your company by
@@ -100,7 +100,7 @@ const About = props => {
                   <div className="container">
                     <div>
                       <h1 className="h-text-fontMain u-textAlignCenter mt-5">
-                        Join the largest network in Ireland{" "}
+                        Dołącz do największej sieci w Polsce{" "}
                       </h1>
                       <div className="about-call-to-action">
                         <div className="join-item text-center">
