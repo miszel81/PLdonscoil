@@ -19,7 +19,7 @@ const SearchBox = ({ value, onChange, onSubmit }) => {
             type="text"
             name="query"
             className="form-control mainsearch"
-            placeholder="Find your school here:"
+            placeholder="Znajdz swoją szkołę:"
             value={value}
             onChange={e => onChange(e.currentTarget.value)}
             autoCapitalize="none"

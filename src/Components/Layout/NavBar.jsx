@@ -66,12 +66,12 @@ class NavBar extends Component {
           <div className="Navbar-items">
             {!user && (
               <div className="Navbar-item">
-                <Link to="/ourmission">about</Link>
+                <Link to="/ourmission">o nas</Link>
               </div>
             )}
             {!user && (
               <div className="Navbar-item">
-                <Link to="/forschools">schools</Link>
+                <Link to="/forschools">szkoła</Link>
               </div>
             )}
 
@@ -86,17 +86,17 @@ class NavBar extends Component {
             {/** Conditional rendering login/logout */}
             {!user && (
               <div className="Navbar-item">
-                <Link to="/forsupporters">supporters</Link>
+                <Link to="/forsupporters">wspieraj</Link>
               </div>
             )}
             {!user && (
               <div className="Navbar-item">
-                <Link to="/contact">contact us</Link>
+                <Link to="/contact">kontakt</Link>
               </div>
             )}
             {!user && (
               <div className="Navbar-item">
-                <Link to="/login">login</Link>
+                <Link to="/login">zaloguj</Link>
               </div>
             )}
 
@@ -115,7 +115,7 @@ class NavBar extends Component {
             {user && (
               <div>
                 <div className="Navbar-item">
-                  <Link to="/logout">logout</Link>
+                  <Link to="/logout">wyloguj</Link>
                 </div>
               </div>
             )}
