@@ -52,7 +52,7 @@ class SchoolSearchBox extends Component {
       <React.Fragment>
         <div className="container-fluid mt-5">
           <div className="slogan">
-            <h4>Dzieciaki chcą zmieniać świat!</h4>
+            <h4>Dzieci mogą zmieniać świat!</h4>
             <h5>Wspieraj ich fantastyczne projekty szkolne</h5>
           </div>
 
