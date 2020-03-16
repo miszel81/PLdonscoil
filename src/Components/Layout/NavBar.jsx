@@ -71,7 +71,7 @@ class NavBar extends Component {
             )}
             {!user && (
               <div className="Navbar-item">
-                <Link to="/forschools">szkoła</Link>
+                <Link to="/forschools">dla szkół</Link>
               </div>
             )}
 
